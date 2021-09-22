@@ -1,4 +1,5 @@
 ﻿using STCAPI.Core.Entities.Common;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace STCAPI.Core.Entities.STCVAT
@@ -12,5 +13,10 @@ namespace STCAPI.Core.Entities.STCVAT
         public string SupplierInvoiceNumber { get; set; }
         public string ReconcileApprove { get; set; }
         public string ImagePath { get; set; }
+        [NotMapped]
+        public List<string> ImagesUrl { get; set; }
+        public string EmailTo { get; set; }
+        public bool IsEmailSend { get; set; }
+        public string Comments { get; set; }
     }
 }

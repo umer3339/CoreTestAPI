@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using STCAPI.Core.Entities.AdminPortal;
+using STCAPI.Core.Entities.Reconcilation;
 using STCAPI.Core.Entities.STCVAT;
+using STCAPI.Core.Entities.UserManagement;
 
 namespace STCAPI.Core.Entities.Context
 {
@@ -23,5 +26,11 @@ namespace STCAPI.Core.Entities.Context
         }
          
         public virtual DbSet<STCVATForm> STCVATForms { get; set; }
+        public virtual DbSet<STCPostValidation> STCPostValidations { get; set; }
+        public virtual DbSet<StageModel> StageModels { get; set; }
+        public virtual DbSet<MainLevel> MainLevels { get; set; }
+        public virtual DbSet<StreamModel> StreamModels { get; set; }
+        public virtual DbSet<RecincilationSummary> RecincilationSummaries { get; set; }
+        public virtual DbSet<PortalAccess> PortalAccesses { get; set; }
     }
 }

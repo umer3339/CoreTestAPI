@@ -8,11 +8,11 @@ namespace STCAPI.Core.Entities.Common
 {
     public enum ResponseStatus
     {
-        Created,
+        Created=201,
         Deleted,
         Updated,
-        Success,
+        Success=200,
         AlreadyExists,
-        Error
+        Error=500
     }
 }

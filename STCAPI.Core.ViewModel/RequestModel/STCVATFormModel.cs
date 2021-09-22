@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MailHelper;
+using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,13 @@ namespace STCAPI.Core.ViewModel.RequestModel
         public string TaxCode { get; set; }
         public string SupplierInvoiceNumber { get; set; }
         public string ReconcileApprove { get; set; }
+        public List<IFormFile> Images { get; set; }
         public string ImagePath { get; set; }
+        public string UserName { get; set; }
+        public List<string> EmailTo { get; set; }
+        public string EmailTemplate { get; set; }
+        public bool  IsEmaiSend { get; set; }
+        public string EmailSubject { get; set; }
+        public string Comments { get; set; }
     }
 }

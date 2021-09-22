@@ -17,6 +17,7 @@ namespace STCAPI.Core.Entities.Context
             modelBuilder.Property(r => r.IsDeleted).HasDefaultValue(false);
             modelBuilder.Property(r => r.CreatedDate).HasDefaultValue(DateTime.Now.Date);
             modelBuilder.Property(r => r.UpdatedDate).HasDefaultValue(null);
+
         }
     }
 }

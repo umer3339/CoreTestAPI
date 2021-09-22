@@ -5,12 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MailHelper\MailHelper.csproj" />
-    <ProjectReference Include="..\STCAPI.Core.Entities\STCAPI.Core.Entities.csproj" />
   </ItemGroup>
 
 </Project>
