@@ -21,7 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{683C7B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailHelper", "MailHelper\MailHelper.csproj", "{7AB5BE05-FCAC-4364-AA46-73ECE5697F1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonHelper", "CommonHelper\CommonHelper.csproj", "{8636AAF5-3569-4036-92B8-37147999691F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonHelper", "CommonHelper\CommonHelper.csproj", "{8636AAF5-3569-4036-92B8-37147999691F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01A9D0D7-D16F-4076-8932-B0EF2CC2D910}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

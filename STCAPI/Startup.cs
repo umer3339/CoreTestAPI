@@ -36,6 +36,7 @@ namespace STCAPI
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "STCAPI", Version = "v1" });
+                c.DescribeAllEnumsAsStrings();
             });
             services.AddAuthenticationToken(Configuration);
 

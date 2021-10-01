@@ -9,10 +9,6 @@ namespace MailHelper
 {
     public class MailBody
     {
-        public StringBuilder GetMailBody(List<JournalDetail> journalDetails)
-        {
-
-            return null;
-        }
+        public StringBuilder GetMailBody(List<JournalDetail> journalDetails) => null;
     }
 }
