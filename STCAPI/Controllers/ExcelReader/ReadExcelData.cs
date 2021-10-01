@@ -128,27 +128,27 @@ namespace STCAPI.Controllers.ExcelReader
                             model.ReceiptNumber = Convert.ToString(inputVatInvoiceDetail.Rows[i][28]);
                             model.PoItemNumber = Convert.ToString(inputVatInvoiceDetail.Rows[i][29]);
                             model.PoItemDescription = Convert.ToString(inputVatInvoiceDetail.Rows[i][30]);
-                            model.InvoiceSource = Convert.ToString(inputVatInvoiceDetail.Rows[i][1]);
-                            model.Quantity = Convert.ToString(inputVatInvoiceDetail.Rows[i][31]);
-                            model.UnitPrice = Convert.ToString(inputVatInvoiceDetail.Rows[i][32]);
-                            model.DiscountAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][33]);
-                            model.DiscountPercentage = Convert.ToString(inputVatInvoiceDetail.Rows[i][34]);
-                            model.ContractNumber = Convert.ToString(inputVatInvoiceDetail.Rows[i][35]);
-                            model.ContractStartDate = Convert.ToString(inputVatInvoiceDetail.Rows[i][36] ?? DateTime.Now.AddYears(100));
-                            model.ContractEndDate = Convert.ToString(inputVatInvoiceDetail.Rows[i][37] ?? DateTime.Now.AddYears(100));
-                            model.OriginalInvoiceNumberForDebitCreditNote = Convert.ToString(inputVatInvoiceDetail.Rows[i][38]);
+                            model.InvoiceSource = Convert.ToString(inputVatInvoiceDetail.Rows[i][31]);
+                            model.Quantity = Convert.ToString(inputVatInvoiceDetail.Rows[i][32]);
+                            model.UnitPrice = Convert.ToString(inputVatInvoiceDetail.Rows[i][33]);
+                            model.DiscountAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][34]);
+                            model.DiscountPercentage = Convert.ToString(inputVatInvoiceDetail.Rows[i][35]);
+                            model.ContractNumber = Convert.ToString(inputVatInvoiceDetail.Rows[i][36]);
+                            model.ContractStartDate = Convert.ToString(inputVatInvoiceDetail.Rows[i][37] ?? DateTime.Now.AddYears(100));
+                            model.ContractEndDate = Convert.ToString(inputVatInvoiceDetail.Rows[i][38] ?? DateTime.Now.AddYears(100));
+                            model.OriginalInvoiceNumberForDebitCreditNote = Convert.ToString(inputVatInvoiceDetail.Rows[i][39]);
 
-                            model.TaxLineNumber = Convert.ToString(inputVatInvoiceDetail.Rows[i][39]);
-                            model.ProductType = Convert.ToString(inputVatInvoiceDetail.Rows[i][40]);
-                            model.TaxCode = Convert.ToString(inputVatInvoiceDetail.Rows[i][41]);
-                            model.TaxRateCode = Convert.ToString(inputVatInvoiceDetail.Rows[i][42]);
-                            model.TaxRate = Convert.ToString(inputVatInvoiceDetail.Rows[i][43]);
-                            model.TaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][44]);
-                            model.SARTaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][45]);
-                            model.RecoverableTaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][46]);
-                            model.SARRecoverableTaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][47]);
-                            model.NonRecoverableTaxAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][48]);
-                            model.SARNonRecoverableTaxAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][49]);
+                            model.TaxLineNumber = Convert.ToString(inputVatInvoiceDetail.Rows[i][40]);
+                            model.ProductType = Convert.ToString(inputVatInvoiceDetail.Rows[i][41]);
+                            model.TaxCode = Convert.ToString(inputVatInvoiceDetail.Rows[i][42]);
+                            model.TaxRateCode = Convert.ToString(inputVatInvoiceDetail.Rows[i][43]);
+                            model.TaxRate = Convert.ToString(inputVatInvoiceDetail.Rows[i][44]);
+                            model.TaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][45]);
+                            model.SARTaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][46]);
+                            model.RecoverableTaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][47]);
+                            model.SARRecoverableTaxableAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][48]);
+                            model.NonRecoverableTaxAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][49]);
+                            model.SARNonRecoverableTaxAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i][50]);
                             models.Add(model);
                         }
                     }
