@@ -50,7 +50,7 @@ namespace STCVAT_Demo.UI.Controllers
             _logger = logger;
 
         }
-     
+
         public IActionResult Index()
         {
             return View();
@@ -65,11 +65,17 @@ namespace STCVAT_Demo.UI.Controllers
             model.InvoiceName = "Input Invocie";
             model.UserName = "Demo";
 
-           
+
             await UploadData(model);
             return Json("");
         }
 
+
+        public async Task<IActionResult> GetDetails()
+        {
+            var data = await _IInputVatDataFileRepository.GetAllEntities(x=>x.IsDeleted);
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
@@ -137,7 +143,8 @@ namespace STCVAT_Demo.UI.Controllers
                     case VATExcelType.VATTrialBalanceDataFile:
                         var balanceDataModel = await Task.Run(() => VATTrialBalance(model.InvoiceExcelFile));
                         var trialDBModels = await ConvertVATTrialBalanceModelToDBModel(balanceDataModel);
-                        trialDBModels.ForEach(data => {
+                        trialDBModels.ForEach(data =>
+                        {
                             data.UploadInvoiceDetailId = uploadInvoiceId;
                         });
                         var trialDataResponse = await CreateTrialBalance(trialDBModels, model.UserName);
