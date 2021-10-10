@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STCVAT_Demo.UI", "STCVAT_Demo.UI\STCVAT_Demo.UI.csproj", "{0ADE5C3B-4BFF-4582-8238-5EF5FA1E8D60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{8636AAF5-3569-4036-92B8-37147999691F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8636AAF5-3569-4036-92B8-37147999691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8636AAF5-3569-4036-92B8-37147999691F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADE5C3B-4BFF-4582-8238-5EF5FA1E8D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADE5C3B-4BFF-4582-8238-5EF5FA1E8D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADE5C3B-4BFF-4582-8238-5EF5FA1E8D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADE5C3B-4BFF-4582-8238-5EF5FA1E8D60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

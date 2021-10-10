@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 
 namespace STCAPI.Controllers.ExcelReader
 {
-    [Route("api/[controller]/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     [EnableCors("AllowAnyOrigin")]
     public class ReadExcelData : ControllerBase
@@ -118,6 +118,72 @@ namespace STCAPI.Controllers.ExcelReader
 
 
         #region PrivateMethod
+        [NonAction]
+        public  async Task UploadData(InvoiceDetail model) {
+
+            try
+            {
+                IDictionary<int, (string, string)> errorResult = new Dictionary<int, (string, string)>();
+                var attachmentList = await new BlobHelper().UploadDocument(model.AttachmentList, _IHostingEnviroment);
+                var invoiceFiles = new List<IFormFile>() { model.InvoiceExcelFile };
+
+                _logger.LogInformation("File attachment has been done", DateTime.Now);
+
+
+                var uploadFileDetails = await new BlobHelper().UploadDocument(invoiceFiles, _IHostingEnviroment);
+
+                var uploadInvoiceId = await CreateUploadInvocie(model, attachmentList);
+
+                switch (model.ExcelType)
+                {
+                    case VATExcelType.InputDataFile:
+                        var inputVATModel = await Task.Run(() => InputVATExcelData(model.InvoiceExcelFile));
+                        errorResult = InputVATvalidationRule.ValidateInputVatData(inputVATModel);
+                        var dbModels = await ConvertInputModelToDBModel(inputVATModel);
+                        dbModels.ForEach(data =>
+                        {
+                            data.UploadInvoiceDetailId = uploadInvoiceId;
+                        });
+                        var inputDataFileResponse = await CreateInputVATDetail(dbModels, model.UserName);
+                        break;
+
+                    case VATExcelType.OutputDataFile:
+                        var outputVATModel = await Task.Run(() => OutputVATExcelFle(model.InvoiceExcelFile));
+                        var dtoModel = await DTOOutModelToOutputDataModel(outputVATModel);
+                        dtoModel.ForEach(data =>
+                        {
+                            data.UploadInvoiceDetailId = uploadInvoiceId;
+                        });
+
+                        var dbResponse = await CreateSTCOutputModel(dtoModel, model.UserName);
+                        break;
+
+                    case VATExcelType.VATReturnDataFile:
+                        var returnModel = await GetVATReturnDetail(model.InvoiceExcelFile);
+                        var dbReturnModels = await DTOConvertModelTODBObject(returnModel);
+                        dbReturnModels.Item2.ForEach(data =>
+                        {
+                            data.UploadInvoiceDetailId = uploadInvoiceId;
+                        });
+
+                        var dbReturnResponse = await CreateVATReturnData(dbReturnModels.Item2, model.UserName);
+                        break;
+
+                    case VATExcelType.VATTrialBalanceDataFile:
+                        var balanceDataModel = await Task.Run(() => VATTrialBalance(model.InvoiceExcelFile));
+                        var trialDBModels = await ConvertVATTrialBalanceModelToDBModel(balanceDataModel);
+                        trialDBModels.ForEach(data => {
+                            data.UploadInvoiceDetailId = uploadInvoiceId;
+                        });
+                        var trialDataResponse = await CreateTrialBalance(trialDBModels, model.UserName);
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                string exception = ex.Message;
+            }
+        }
         private async Task<int> CreateUploadInvocie(InvoiceDetail model, List<string> attchementList)
         {
             var invoiceModel = new UploadInvoiceDetail()
