@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CommonHelper;
 using MailHelper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +18,7 @@ namespace STCAPI.Controllers.STCVAT
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [EnableCors("AllowAnyOrigin")]
     public class STCVATFormAPI : ControllerBase
     {
         private readonly IMapper _IMapper;

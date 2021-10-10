@@ -65,11 +65,11 @@ namespace STCAPI
             app.UseDeveloperExceptionPage();
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "STCAPI v1"));
-            app.UseCors(option=>option.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            
             app.UseRouting();
             app.UseStaticFiles();
             app.UseAuthorization();
-
+            app.UseCors("AllowAnyOrigin");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -1,0 +1,409 @@
+-- stcvat_development.datasource definition
+
+CREATE TABLE `datasource` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `StreamId` int NOT NULL,
+  `DataSourceName` varchar(250) NOT NULL,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` int DEFAULT '1',
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+-- stcvat_development.demotable definition
+
+CREATE TABLE `demotable` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `DemoName` varchar(250) NOT NULL,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` int DEFAULT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- stcvat_development.inputvatdetail definition
+
+CREATE TABLE `inputvatdetail` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(250) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `InvoiceType` varchar(500) DEFAULT NULL,
+  `InvoiceSource` varchar(500) DEFAULT NULL,
+  `InvoiceNumber` varchar(500) DEFAULT NULL,
+  `InvoiceDocNumber` varchar(500) DEFAULT NULL,
+  `InvoiceDate` datetime DEFAULT NULL,
+  `GLDate` datetime DEFAULT NULL,
+  `TotalInvoiceAmount` decimal(12,2) DEFAULT NULL,
+  `InvoiceCurrency` varchar(500) DEFAULT NULL,
+  `CurrencyExchangeRate` decimal(12,2) DEFAULT NULL,
+  `SARInvoiceAmount` decimal(12,2) DEFAULT NULL,
+  `SuppierNumber` int DEFAULT NULL,
+  `SupplierName` varchar(500) DEFAULT NULL,
+  `SupplierSite` varchar(500) DEFAULT NULL,
+  `SupplierAddress` varchar(500) DEFAULT NULL,
+  `SupplierCountry` varchar(500) DEFAULT NULL,
+  `SupplierBankAccount` varchar(500) DEFAULT NULL,
+  `SupplierVATRegistrationNumber` varchar(500) DEFAULT NULL,
+  `SupplierVATGroupRegistrationNumber` varchar(500) DEFAULT NULL,
+  `InvoiceStatus` varchar(500) DEFAULT NULL,
+  `PaymentStatus` varchar(500) DEFAULT NULL,
+  `PaymentAmount` decimal(12,2) DEFAULT NULL,
+  `PaymentMethod` varchar(500) DEFAULT NULL,
+  `PaymentTerm` varchar(500) DEFAULT NULL,
+  `InvoiceLineNumber` int DEFAULT NULL,
+  `InvoiceLineDescription` varchar(500) DEFAULT NULL,
+  `PONumber` varchar(500) DEFAULT NULL,
+  `PoDate` datetime DEFAULT NULL,
+  `ReleaseDate` datetime DEFAULT NULL,
+  `ReceiptNumber` varchar(500) DEFAULT NULL,
+  `ReceiptDate` datetime DEFAULT NULL,
+  `PoItemNumber` varchar(500) DEFAULT NULL,
+  `PoItemDescription` varchar(500) DEFAULT NULL,
+  `Quantity` decimal(12,2) DEFAULT NULL,
+  `UnitPrice` decimal(12,2) DEFAULT NULL,
+  `DiscountAmount` decimal(12,2) DEFAULT NULL,
+  `DiscountPercentage` decimal(12,2) DEFAULT NULL,
+  `ContractNumber` varchar(500) DEFAULT NULL,
+  `ContractStartDate` datetime DEFAULT NULL,
+  `ContractEndDate` datetime DEFAULT NULL,
+  `OriginalInvoiceNumberForDebitCreditNote` varchar(500) DEFAULT NULL,
+  `TaxLineNumber` int DEFAULT NULL,
+  `ProductType` varchar(500) DEFAULT NULL,
+  `TaxCode` varchar(500) DEFAULT NULL,
+  `TaxRateCode` varchar(500) DEFAULT NULL,
+  `TaxRate` int DEFAULT NULL,
+  `TaxableAmount` decimal(12,2) DEFAULT NULL,
+  `SARTaxableAmount` decimal(12,2) DEFAULT NULL,
+  `RecoverableTaxableAmount` decimal(12,2) DEFAULT NULL,
+  `SARRecoverableTaxableAmount` decimal(12,2) DEFAULT NULL,
+  `NonRecoverableTaxAmount` decimal(12,2) DEFAULT NULL,
+  `SARNonRecoverableTaxAmount` decimal(12,2) DEFAULT NULL,
+  `RecoverableTaxGLAccountNumber` varchar(500) DEFAULT NULL,
+  `UploadInvoiceDetailId` int DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+-- stcvat_development.inputvattrialbalance definition
+
+CREATE TABLE `inputvattrialbalance` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(250) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `Account` varchar(500) DEFAULT NULL,
+  `Description` varchar(500) DEFAULT NULL,
+  `BeginingBalance` decimal(12,2) DEFAULT NULL,
+  `Debit` decimal(12,2) DEFAULT NULL,
+  `Credit` decimal(12,2) DEFAULT NULL,
+  `Activity` decimal(12,2) DEFAULT NULL,
+  `EndingBalance` decimal(12,2) DEFAULT NULL,
+  `UploadInvoiceDetailId` int DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- stcvat_development.mainlevel definition
+
+CREATE TABLE `mainlevel` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` int NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `StageId` int DEFAULT NULL,
+  `LevelName` varchar(250) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+-- stcvat_development.newrequestdetails definition
+
+CREATE TABLE `newrequestdetails` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(200) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `Category` varchar(500) DEFAULT NULL,
+  `Priority` varchar(500) DEFAULT NULL,
+  `Description` varchar(2000) DEFAULT NULL,
+  `Attachments` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- stcvat_development.outputvatdetail definition
+
+CREATE TABLE `outputvatdetail` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(200) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `InvoiceNumber` varchar(500) DEFAULT NULL,
+  `InvoiceDocSequence` varchar(500) DEFAULT NULL,
+  `InvoiceSource` varchar(500) DEFAULT NULL,
+  `InvoiceType` varchar(500) DEFAULT NULL,
+  `InvoiceDate` datetime DEFAULT NULL,
+  `GLDate` datetime DEFAULT NULL,
+  `InvoiceAmount` decimal(12,2) DEFAULT NULL,
+  `InvoiceCurrency` varchar(500) DEFAULT NULL,
+  `CurrencyExchangeRate` decimal(12,2) DEFAULT NULL,
+  `SARInvoiceAmount` decimal(12,2) DEFAULT NULL,
+  `CustomerNumber` varchar(500) DEFAULT NULL,
+  `CustomerName` varchar(500) DEFAULT NULL,
+  `BillToAddress` varchar(500) DEFAULT NULL,
+  `CustomerCountryName` varchar(500) DEFAULT NULL,
+  `CustomerVATRegistrationNumber` varchar(500) DEFAULT NULL,
+  `CustomerCommercialRegistrationNumber` varchar(500) DEFAULT NULL,
+  `SellerName` varchar(500) DEFAULT NULL,
+  `SellerVATRegistrationNumber` varchar(500) DEFAULT NULL,
+  `SellerAddress` varchar(500) DEFAULT NULL,
+  `GroupVATRegistrationNumber` varchar(500) DEFAULT NULL,
+  `SellerCommercialNumber` varchar(500) DEFAULT NULL,
+  `InvoiceLineNumber` varchar(500) DEFAULT NULL,
+  `InvoiceLineDescription` varchar(500) DEFAULT NULL,
+  `IssueDate` varchar(500) DEFAULT NULL,
+  `Quantity` decimal(12,2) DEFAULT NULL,
+  `UnitPrice` decimal(12,2) DEFAULT NULL,
+  `DiscountAmount` decimal(12,2) DEFAULT NULL,
+  `DiscountPercentage` decimal(12,2) DEFAULT NULL,
+  `PaymentMethod` varchar(500) DEFAULT NULL,
+  `PaymentTerm` varchar(500) DEFAULT NULL,
+  `InvoiceLineAmount` decimal(12,2) DEFAULT NULL,
+  `SARInvoiceLineAmount` decimal(12,2) DEFAULT NULL,
+  `TaxRateName` varchar(500) DEFAULT NULL,
+  `TaxableAmount` decimal(12,2) DEFAULT NULL,
+  `TaxAmount` decimal(12,2) DEFAULT NULL,
+  `SARTaxAmount` decimal(12,2) DEFAULT NULL,
+  `TaxClassificationCode` varchar(500) DEFAULT NULL,
+  `TaxRate` decimal(12,2) DEFAULT NULL,
+  `TaxAccount` varchar(500) DEFAULT NULL,
+  `ContractNumber` varchar(500) DEFAULT NULL,
+  `ContractDescription` varchar(500) DEFAULT NULL,
+  `ContractStartDate` datetime DEFAULT NULL,
+  `ContractEndDate` datetime DEFAULT NULL,
+  `OriginalInvoice` varchar(500) DEFAULT NULL,
+  `PoNumber` varchar(500) DEFAULT NULL,
+  `UniversalUniqueInvoiceIndentifier` varchar(500) DEFAULT NULL,
+  `QRCode` varchar(500) DEFAULT NULL,
+  `PreviousInvoiceNoteHash` varchar(500) DEFAULT NULL,
+  `InvoiceTamperResistantCounterValue` varchar(500) DEFAULT NULL,
+  `UploadInvoiceDetailId` int DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- stcvat_development.portalaccessdetail definition
+
+CREATE TABLE `portalaccessdetail` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` varchar(500) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` varchar(500) DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `StreamName` varchar(250) NOT NULL,
+  `UserName` varchar(500) DEFAULT NULL,
+  `Dashboard` tinyint(1) DEFAULT '0',
+  `Form` tinyint(1) DEFAULT '0',
+  `Report` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- stcvat_development.portalmenumaster definition
+
+CREATE TABLE `portalmenumaster` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(200) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` varchar(500) DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `Stage` varchar(500) DEFAULT NULL,
+  `MainStream` varchar(500) DEFAULT NULL,
+  `StreamLongName` varchar(2000) DEFAULT NULL,
+  `Stream` varchar(5000) DEFAULT NULL,
+  `ObjectName` varchar(500) DEFAULT NULL,
+  `Name` varchar(500) DEFAULT NULL,
+  `Url` varchar(500) DEFAULT NULL,
+  `Flag` bit(1) DEFAULT b'0',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- stcvat_development.reconcilationsummary definition
+
+CREATE TABLE `reconcilationsummary` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` varchar(500) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` varchar(500) DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `HeaderLineKey` varchar(250) NOT NULL,
+  `ReconcilationStatus` varchar(500) DEFAULT NULL,
+  `EmailTo` varchar(5000) DEFAULT NULL,
+  `AdjustmentValue` varchar(500) DEFAULT NULL,
+  `Attachment` varchar(5000) DEFAULT NULL,
+  `Comments` varchar(1000) DEFAULT NULL,
+  `IsEmailSend` tinyint(1) DEFAULT '0',
+  `ImagePath` varchar(500) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- stcvat_development.stages definition
+
+CREATE TABLE `stages` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` int NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `StageName` varchar(250) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- stcvat_development.stcvat_form definition
+
+CREATE TABLE `stcvat_form` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` varchar(500) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` varchar(500) DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `HeaderLineKey` varchar(250) NOT NULL,
+  `TaxClassificationCode` varchar(500) DEFAULT NULL,
+  `TaxCode` varchar(500) DEFAULT NULL,
+  `SupplierInvoiceNumber` varchar(500) DEFAULT NULL,
+  `ReconcileApprove` varchar(30) DEFAULT NULL,
+  `ImagePath` varchar(5000) DEFAULT NULL,
+  `EmailTo` varchar(5000) DEFAULT NULL,
+  `IsEmailSend` tinyint(1) DEFAULT '0',
+  `Comments` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- stcvat_development.stcvat_postvalidation definition
+
+CREATE TABLE `stcvat_postvalidation` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` varchar(200) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` varchar(200) DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `HeaderLineKey` varchar(250) NOT NULL,
+  `PostValidation` varchar(500) DEFAULT NULL,
+  `EmailId` varchar(2500) DEFAULT NULL,
+  `IsEmailSend` tinyint(1) DEFAULT '0',
+  `Comment` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE KEY `HeaderLineKey` (`HeaderLineKey`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- stcvat_development.stream definition
+
+CREATE TABLE `stream` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `MainLevelId` int NOT NULL,
+  `StreamName` varchar(250) NOT NULL,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` int DEFAULT '1',
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- stcvat_development.uploadinvoicedetails definition
+
+CREATE TABLE `uploadinvoicedetails` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(200) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `InvoiceName` varchar(500) DEFAULT NULL,
+  `Attachments` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;	
+
+
+-- stcvat_development.userformdetail definition
+
+CREATE TABLE `userformdetail` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` tinyint(1) DEFAULT '1',
+  `IsDeleted` tinyint(1) DEFAULT '0',
+  `CreatedBy` int NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `Stages` varchar(250) NOT NULL,
+  `MainLevel` varchar(250) NOT NULL,
+  `Stream` varchar(250) NOT NULL,
+  `DataSource` varchar(250) NOT NULL,
+  `Forms` varchar(250) NOT NULL,
+  `Dashboards` varchar(250) NOT NULL,
+  `Reports` varchar(250) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- stcvat_development.vatreturndetail definition
+
+CREATE TABLE `vatreturndetail` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `IsActive` bit(1) DEFAULT b'1',
+  `IsDeleted` bit(1) DEFAULT b'0',
+  `CreatedBy` varchar(200) NOT NULL,
+  `CreatedDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedBy` int DEFAULT NULL,
+  `UpdatedDate` datetime DEFAULT NULL,
+  `VATType` varchar(500) DEFAULT NULL,
+  `VATTypeId` decimal(12,2) DEFAULT NULL,
+  `VATTypeName` varchar(500) DEFAULT NULL,
+  `SARAmount` decimal(12,2) DEFAULT NULL,
+  `SARAdjustment` decimal(12,2) DEFAULT NULL,
+  `SARVATAmount` decimal(12,2) DEFAULT NULL,
+  `VATReturnDetail` varchar(500) DEFAULT NULL,
+  `UploadInvoiceDetailId` int DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

@@ -1,4 +1,5 @@
 ﻿using MailHelper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using STAAPI.Infrastructure.Repository.STCVATRepository;
@@ -14,6 +15,7 @@ namespace STCAPI.Controllers.STCVAT
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [EnableCors("AllowAnyOrigin")]
     public class STCVATPostValidationAPI : ControllerBase
     {
         private readonly ISTCPOstValidationRepository _iSTCPOstValidationRepository;

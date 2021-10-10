@@ -12,6 +12,9 @@ namespace STCAPI
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration().Enrich.FromLogContext()
+                .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
+                .CreateLogger();
             CreateHostBuilder(args).Build().Run();
 
         }

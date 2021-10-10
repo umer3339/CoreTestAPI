@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using STCAPI.Core.Entities.AdminPortal;
 using STCAPI.Core.Entities.Reconcilation;
+using STCAPI.Core.Entities.RequestDetail;
 using STCAPI.Core.Entities.STCVAT;
 using STCAPI.Core.Entities.UserManagement;
+using STCAPI.Core.Entities.VATDetailUpload;
 
 namespace STCAPI.Core.Entities.Context
 {
@@ -31,6 +32,14 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<MainLevel> MainLevels { get; set; }
         public virtual DbSet<StreamModel> StreamModels { get; set; }
         public virtual DbSet<RecincilationSummary> RecincilationSummaries { get; set; }
-        public virtual DbSet<PortalAccess> PortalAccesses { get; set; }
+        public virtual DbSet<InputVATDataFile> InputVATDataFiles { get; set; }
+        public virtual DbSet<VATTrailBalanceModel> VATTrailBalanceModels { get; set; }
+        public virtual DbSet<STCVATOutputModel> STCVATOutputModels { get; set; }
+
+        public virtual DbSet<VATReturnModel> VATReturnModels { get; set; }
+        public virtual DbSet<UploadInvoiceDetail> UploadInvoiceDetails { get; set; }
+        public virtual DbSet<RequestDetailModel> RequestDetailModels { get; set; }
+        public virtual DbSet<PortalMenuMaster> PortalMenuMasters { get; set; }
+        public virtual DbSet<UserManagement.PortalAccess> PortalAccesses { get; set; }
     }
 }

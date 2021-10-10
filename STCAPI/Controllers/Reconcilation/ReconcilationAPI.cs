@@ -1,5 +1,6 @@
 ﻿using CommonHelper;
 using MailHelper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,7 @@ namespace STCAPI.Controllers.Reconcilation
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [EnableCors("AllowAnyOrigin")]
     public class ReconcilationAPI : ControllerBase
     {
         private readonly IReconcilationSummaryRepository _IReconcilationSummaryRepo;

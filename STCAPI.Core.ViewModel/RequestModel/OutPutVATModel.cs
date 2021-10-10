@@ -13,10 +13,12 @@
         public string CurrencyExchangeRate { get; set; }
 
         public string SARInvoiceAmount { get; set; }
+        public string CustomerNumber { get; set; }
         public string CustomerName { get; set; }
         public string BillToAdress { get; set; }
         public string CustomerCountryName { get; set; }
         public string CustomerVATRegistrationNumber { get; set; }
+        public string CustomerCommercialRegistrationNumber { get; set; }
         public string SellerNumber { get; set; }
         public string SellerVATRegistrationNumber    { get; set; }
         public string SellerAddress { get; set; }
@@ -52,5 +54,6 @@
         public string QRCode { get; set; }
         public string PreviousInvoiceNoteHash { get; set; }
         public string InvoiceTamperResistantCounterValue { get; set; }
+        public string SellerName { get; set; }
     }
 }
