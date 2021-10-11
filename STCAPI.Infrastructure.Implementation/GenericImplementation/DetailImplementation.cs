@@ -65,7 +65,7 @@ namespace STCAPI.Infrastructure.Implementation.GenericImplementation
         public async Task<ResponseModel<TEntity, T>> GetAllEntities(Func<TEntity, bool> where)
         {
             IQueryable<TEntity> dbQuery = context.Set<TEntity>();
-            var tList = dbQuery.AsNoTracking().ToList<TEntity>();
+            var tList = dbQuery.AsNoTracking().Where(where).ToList<TEntity>();
             return await Task.Run(() => new ResponseModel<TEntity, T>(null, tList, "success", ResponseStatus.Success));
         }
 

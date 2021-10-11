@@ -74,7 +74,7 @@ namespace STCVAT_Demo.UI.Controllers
         public async Task<IActionResult> GetDetails()
         {
             var data = await _IInputVatDataFileRepository.GetAllEntities(x=>x.IsDeleted);
-            return View();
+            return View("~/Views/Home/GetDetails.cshtml");
         }
         public IActionResult Privacy()
         {

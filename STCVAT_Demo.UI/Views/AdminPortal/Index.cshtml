@@ -1,0 +1,48 @@
+﻿<table>
+    <tr data-toggle="toggle">
+        <td>
+            <p id="Technology">
+                <b>
+                    <span class="plusminusTechnology">+</span>
+                    <span lang="EN-IN">Technology </span>
+                </b>
+            </p>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tbody class="hideTr">
+        <tr>
+            <td></td>
+            <td>
+                <img height="28" src="clip_image001.png" v:shapes="Picture_x0020_5" width="106" />
+            </td>
+            <td>
+	                <span lang="EN-IN">4</span>
+	            </td>
+            <td>
+	</td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+	    $(document).ready(function () {
+	        debugger;
+	        $('.hideTr').slideUp(600);
+	     $('[data-toggle="toggle"]').click(function () {
+	        if ($(this).parents().next(".hideTr").is(':visible')) {
+	            $(this).parents().next('.hideTr').slideUp(600);
+	            $(".plusminus" + $(this).children().children().attr("id")).text('+');
+	           $(this).css('background-color', 'white');
+	            }
+	        else {
+	            $(this).parents().next('.hideTr').slideDown(600);
+	            $(".plusminus" + $(this).children().children().attr("id")).text('- ');
+	           $(this).css('background-color', '#c1eaff ');
+	        }
+	    });
+	    });
+</script>  
