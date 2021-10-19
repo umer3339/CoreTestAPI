@@ -56,24 +56,35 @@ namespace STCVAT_Demo.UI.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> UploadFile(IFormFile inputVATDatafile, IFormFile outputVATDatafile, IFormFile VATReturnDataFile, IFormFile VATTrailBalanceDataFile)
+        public async Task<IActionResult> UploadFile(IFormFile inputVATDatafile,
+            IFormFile outputVATDatafile, IFormFile VATReturnDataFile, IFormFile VATTrailBalanceDataFile, string validateSubmit, string finalSubmit)
         {
-            InvoiceDetail model = new InvoiceDetail();
-            model.AttachmentList = new List<IFormFile>() { inputVATDatafile };
-            model.ExcelType = VATExcelType.InputDataFile;
-            model.InvoiceExcelFile = inputVATDatafile;
-            model.InvoiceName = "Input Invocie";
-            model.UserName = "Demo";
-
-
-            await UploadData(model);
-            return Json("");
+            IDictionary<int, (string, string)> errorResult = new Dictionary<int, (string, string)>();
+            switch (validateSubmit)
+            {
+                case "Input":
+                    var inputVATModel = await Task.Run(() => InputVATExcelData(inputVATDatafile));
+                    errorResult = InputVATvalidationRule.ValidateInputVatData(inputVATModel);
+                    break;
+            }
+            return Json("Data Validated...");
         }
 
+        //private async Task NewMethod(IFormFile inputVATDatafile)
+        //{
+        //    InvoiceDetail model = new InvoiceDetail();
+        //    model.AttachmentList = new List<IFormFile>() { inputVATDatafile };
+        //    model.ExcelType = VATExcelType.InputDataFile;
+        //    model.InvoiceExcelFile = inputVATDatafile;
+        //    model.InvoiceName = "Input Invocie";
+        //    model.UserName = "Demo";
+
+        //    await UploadData(model);
+        //}
 
         public async Task<IActionResult> GetDetails()
         {
-            var data = await _IInputVatDataFileRepository.GetAllEntities(x=>x.IsDeleted);
+            var data = await _IInputVatDataFileRepository.GetAllEntities(x => x.IsDeleted);
             return View("~/Views/Home/GetDetails.cshtml");
         }
         public IActionResult Privacy()
