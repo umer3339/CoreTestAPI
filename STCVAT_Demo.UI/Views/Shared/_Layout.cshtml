@@ -367,7 +367,7 @@
     <script src="dist/js/demo.js"></script>
     <script>
         function validateinputVATDatafile() {
-            debugger;
+            $("#SubmitAction").attr("disabled","disabled");
             var fileName = document.getElementById("inputVATDatafile").value,
                 idxDot = fileName.lastIndexOf(".") + 1,
                 extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
@@ -381,6 +381,7 @@
                 else {
                     $("#span_inputvatdatafile").text('');
                     $('#inputVATDatafile').css('border-color', '');
+                    $("#SubmitAction").removeAttr("disabled");
                 }
 
             } else {
@@ -391,6 +392,7 @@
         }
         function validateOutputVATDatafile() {
             debugger;
+            $("#SubmitActionoutputVAT").attr("disabled", "disabled");
             var fileName = document.getElementById("outputVATDatafile").value,
                 idxDot = fileName.lastIndexOf(".") + 1,
                 extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
@@ -404,6 +406,7 @@
                 else {
                     $("#span_outputvatdatafile").text('');
                     $('#outputVATDatafile').css('border-color', '');
+                    $("#SubmitActionoutputVAT").removeAttr("disabled");
                 }
 
             } else {
@@ -413,6 +416,7 @@
             }
         }
         function validateVATReturnDataFile() {
+            $("#SubmitActionVATReturn").attr("disabled", "disabled");
             debugger;
             var fileName = document.getElementById("VATReturnDataFile").value,
                 idxDot = fileName.lastIndexOf(".") + 1,
@@ -427,6 +431,7 @@
                 else {
                     $("#span_VATReturnDataFile").text('');
                     $('#VATReturnDataFile').css('border-color', '');
+                    $("#SubmitActionVATReturn").removeAttr("disabled");
                 }
 
             } else {
@@ -436,7 +441,7 @@
             }
         }
         function validateVATTrailBalanceDataFile() {
-            debugger;
+            $("#SubmitActionVATTrail").attr("disabled", "disabled");
             var fileName = document.getElementById("VATTrailBalanceDataFile").value,
                 idxDot = fileName.lastIndexOf(".") + 1,
                 extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
@@ -450,6 +455,7 @@
                 else {
                     $("#span_VATTrailBalanceDataFile").text('');
                     $('#VATTrailBalanceDataFile').css('border-color', '');
+                    $("#SubmitActionVATTrail").removeAttr("disabled");
                 }
 
             } else {

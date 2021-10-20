@@ -11,7 +11,6 @@
         public string InvoiceAmount { get; set; }
         public string InvoiceCurrency { get; set; }
         public string CurrencyExchangeRate { get; set; }
-
         public string SARInvoiceAmount { get; set; }
         public string CustomerNumber { get; set; }
         public string CustomerName { get; set; }
@@ -23,7 +22,6 @@
         public string SellerVATRegistrationNumber    { get; set; }
         public string SellerAddress { get; set; }
         public string GroupVARRegistrationNumber { get; set; }
-
         public string SellerCommercialNumber { get; set; }
         public string InvoiceLineNumber { get; set; }
         public string InvoiceLineDescription { get; set; }

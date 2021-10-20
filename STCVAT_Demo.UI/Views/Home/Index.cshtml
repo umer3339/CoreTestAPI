@@ -1,220 +1,264 @@
-﻿<form asp-action="UploadFile"  data-ajax="true" data-ajax-method="post"
-      asp-controller="Home" enctype="multipart/form-data" data-ajax-success="FinalFormSuccess">
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <h1>
-            Dashboard
-            <small>Control panel</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ol>
-    </section>
-    <!-- Main content -->
-    <section class="content">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- DIRECT CHAT PRIMARY -->
-                <div class="box box-primary direct-chat direct-chat-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Input VAT Data File : </h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <div class="row" style="padding:20px">
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label">Input VAT Data File : </label><em class="text-danger">*</em>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="inputVATDatafile" name="inputVATDatafile" onchange="validateinputVATDatafile()">
-                                    <span id="span_inputvatdatafile" class="text-danger"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label">Input VAT Attachment : </label><span class="text-danger">*</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <a href="../wp-contents/documents/STCVATGroupMembers-InputVATNewTemplate.xlsx" target="_blank" download class="btn btn-primary btn-flat pull-left">Download Templete</a>
-
-                            </span>
-                        </div>
-
-                    </div>
-                    <!-- /.box-footer-->
-                </div>
-                <!--/.direct-chat -->
-            </div>
-            <div class="col-md-12">
-                <!-- DIRECT CHAT PRIMARY -->
-                <div class="box box-success direct-chat direct-chat-success">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">OutPut VAT Data File : </h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <div class="row" style="padding:20px">
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label">Output VAT Data File : </label><em class="text-danger">*</em>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="outputVATDatafile" name="outputVATDatafile" onchange="validateOutputVATDatafile()">
-                                    <span id="span_outputvatdatafile" class="text-danger"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label">Output VAT Attachment : </label><span class="text-danger">*</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <a href="../wp-contents/documents/STCVATGroupMembers-OutputVATNewTemplate.xlsx" target="_blank" download class="btn btn-success btn-flat pull-left">Download Templete</a>
-                            </span>
-                        </div>
-
-                    </div>
-                    <!-- /.box-footer-->
-                </div>
-                <!--/.direct-chat -->
-            </div>
-            <div class="col-md-12">
-                <!-- DIRECT CHAT PRIMARY -->
-                <div class="box box-warning direct-chat direct-chat-warning">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">  VAT Return Data File : </h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <div class="row" style="padding:20px">
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label"> VAT Return Data File : </label><em class="text-danger">*</em>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="VATReturnDataFile" name="VATReturnDataFile" onchange="validateVATReturnDataFile()">
-                                    <span id="span_VATReturnDataFile" class="text-danger"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label">  VAT  Return Attachment : </label><span class="text-danger">*</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <a href="../wp-contents/documents/STCVATGroupMembers-VATReturnNewTemplate.xlsx" target="_blank" download class="btn btn-warning btn-flat pull-left">Download Templete</a>
-                            </span>
-                        </div>
-
-                    </div>
-                    <!-- /.box-footer-->
-                </div>
-                <!--/.direct-chat -->
-            </div>
-            <div class="col-md-12">
-                <!-- DIRECT CHAT PRIMARY -->
-                <div class="box box-danger  direct-chat direct-chat-danger ">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">  VAT Trail Balance  Data File : </h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <div class="row" style="padding:20px">
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label"> VAT Trail Balance  Data File : </label><em class="text-danger">*</em>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="VATTrailBalanceDataFile" name="VATTrailBalanceDataFile" onchange="validateVATTrailBalanceDataFile()">
-                                    <span id="span_VATTrailBalanceDataFile" class="text-danger"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="inputEmail3" class="control-label">  VAT  Trail Balance  Attachment : </label><span class="text-danger">*</span>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <a href="../wp-contents/documents/STCVATGroupMembers-UploadingSourceDataPage.xlsx" target="_blank" download class="btn btn-primary btn-flat pull-left">Download Templete</a>
-                                <button type="submit" class="btn btn-primary btn-flat pull-right">Submit</button>
-                            </span>
-                        </div>
-
-                    </div>
-                    <!-- /.box-footer-->
-                </div>
-                <!--/.direct-chat -->
-            </div>
-
-
-        </div>
-    </section>
-    <!-- /.content -->
-</div>
-
-</form>
+﻿
 <script type="text/javascript">
     function FinalFormSuccess(response) {
-        alert(response);
+        $("#modalError").html(response);
+        $("#myModal").modal('show');
     }
 </script>
+
+
+
+<form asp-action="UploadFile" asp-controller="Home"  data-ajax="true" data-ajax-method="post"
+      enctype="multipart/form-data" data-ajax-success="FinalFormSuccess">
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Upload VAT File
+
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Upload VAT File</li>
+            </ol>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- DIRECT CHAT PRIMARY -->
+                    <div class="box box-primary direct-chat direct-chat-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Input VAT Data File : </h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <form asp-action="UploadFile"  data-ajax="true" data-ajax-method="post"
+      enctype="multipart/form-data" data-ajax-success="FinalFormSuccess" asp-controller="Home">
+
+                            <div class="box-body">
+                                <div class="row" style="padding:20px">
+                                    <div class="col-md-3">
+                                        <label for="inputEmail3" class="control-label">Input VAT Data File : </label><em class="text-danger">*</em>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <input type="file" class="form-control" id="inputVATDatafile" name="inputVATDatafile" onchange="validateinputVATDatafile()">
+                                            <span id="span_inputvatdatafile" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="inputEmail3" class="control-label">Input VAT Attachment : </label><span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <input type="file" onchange="validateinputVATDatafile()" class="form-control" id="inputEmail3" placeholder="Email">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <a href="../wp-contents/documents/STCVATGroupMembers-InputVATNewTemplate.xlsx" target="_blank" download class="btn btn-primary btn-flat pull-left"><i class="fa fa-download"></i> Download Templete</a>
+                                        <button type="submit" disabled="disabled"  name="validateSubmit" value="Input" id="SubmitAction" class="btn btn-success pull-right">Validate</button>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </form>
+                        <!-- /.box-footer-->
+                    </div>
+                    <!--/.direct-chat -->
+                </div>
+                <div class="col-md-12">
+                    <!-- DIRECT CHAT PRIMARY -->
+                    <div class="box box-success direct-chat direct-chat-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">OutPut VAT Data File : </h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row" style="padding:20px">
+                                <div class="col-md-3">
+                                    <label for="inputEmail3" class="control-label">Output VAT Data File : </label><em class="text-danger">*</em>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" id="outputVATDatafile" name="outputVATDatafile" onchange="validateOutputVATDatafile()" />
+                                        <span id="span_outputvatdatafile" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputEmail3" class="control-label">Output VAT Attachment : </label><span class="text-danger">*</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
+                                        <input type="hidden" value="0" id="hdnoutputVATDatafile" name="hdnoutputVATDatafile" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <a href="../wp-contents/documents/STCVATGroupMembers-OutputVATNewTemplate.xlsx" target="_blank" download class="btn btn-success btn-flat pull-left"><i class="fa fa-download"></i> Download Templete</a>
+                                    <button type="submit" class="btn btn-primary pull-right" disabled="disabled" value="btnoutputVATDatafile" name="validateSubmit" id="SubmitActionoutputVAT">Validate</button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <!-- /.box-footer-->
+                    </div>
+                    <!--/.direct-chat -->
+                </div>
+                <div class="col-md-12">
+                    <!-- DIRECT CHAT PRIMARY -->
+                    <div class="box box-warning direct-chat direct-chat-warning">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">  VAT Return Data File : </h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row" style="padding:20px">
+                                <div class="col-md-3">
+                                    <label for="inputEmail3" class="control-label"> VAT Return Data File : </label><em class="text-danger">*</em>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" id="VATReturnDataFile" name="VATReturnDataFile" onchange="validateVATReturnDataFile()">
+                                        <span id="span_VATReturnDataFile" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputEmail3" class="control-label">  VAT  Return Attachment : </label><span class="text-danger">*</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
+                                        <input type="hidden" value="0" id="hdnVATReturnDataFile" name="hdnVATReturnDataFile" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <a href="../wp-contents/documents/STCVATGroupMembers-VATReturnNewTemplate.xlsx" target="_blank" download class="btn btn-warning btn-flat pull-left"><i class="fa fa-download"></i> Download Templete</a>
+                                    <button type="submit" class="btn btn-info pull-right" value="btnVATReturnDatafile" disabled="disabled" id="SubmitActionVATReturn" name="validateSubmit">Validate</button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <!-- /.box-footer-->
+                    </div>
+                    <!--/.direct-chat -->
+                </div>
+                <div class="col-md-12">
+                    <!-- DIRECT CHAT PRIMARY -->
+                    <div class="box box-danger  direct-chat direct-chat-danger ">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">  VAT Trail Balance  Data File : </h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row" style="padding:20px">
+                                <div class="col-md-3">
+                                    <label for="inputEmail3" class="control-label"> VAT Trail Balance  Data File : </label><em class="text-danger">*</em>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" id="VATTrailBalanceDataFile" name="VATTrailBalanceDataFile" onchange="validateVATTrailBalanceDataFile()" />
+                                        <span id="span_VATTrailBalanceDataFile" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputEmail3" class="control-label">  VAT  Trail Balance  Attachment : </label><span class="text-danger">*</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
+                                        <input type="hidden" value="0" id="hdnVATTrailBalanceDataFile" name="hdnVATTrailBalanceDataFile" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <a href="../wp-contents/documents/STCVATGroupMembers-UploadingSourceDataPage.xlsx" target="_blank" download class="btn btn-primary btn-flat pull-left"><i class="fa fa-download"></i> Download Templete</a>
+                                    <button type="submit" class="btn btn-warning pull-right" value="btnVATTrailBalanceDataFile"  disabled="disabled" id="SubmitActionVATTrail" name="validateSubmit">Validate</button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <!-- /.box-footer-->
+                    </div>
+                    <!--/.direct-chat -->
+                </div>
+                <div class="col-md-12"  id="div_Submit">
+                    <div class="box-footer">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" disabled="disabled" class="btn btn-success pull-right">Submit</button>
+                            </span>
+                        </div>
+                        <!-- /.box-footer-->
+                    </div>
+                    <!--/.direct-chat -->
+                </div>
+
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+
+</form>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Validation Error Details</h4>
+            </div>
+            <div class="modal-body">
+               <div id="modalError"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

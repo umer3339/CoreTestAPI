@@ -66,8 +66,21 @@ namespace STCVAT_Demo.UI.Controllers
                     var inputVATModel = await Task.Run(() => InputVATExcelData(inputVATDatafile));
                     errorResult = InputVATvalidationRule.ValidateInputVatData(inputVATModel);
                     break;
+                case "btnoutputVATDatafile":
+                    var OutputVATModel = await Task.Run(() => OutputVATExcelFle(outputVATDatafile));
+                    errorResult = OutputVATValidationRule.ValidateOutputVatData(OutputVATModel);
+                    break;
+                case "btnVATReturnDatafile":
+                    var VATReturnModel = await Task.Run(() => VATReturnExcelData(VATReturnDataFile));
+                     errorResult = VATReturnValidationRule.ValidateVATReturn(VATReturnModel);
+                    break;
+                case "btnVATTrailBalanceDataFile":
+                    var OutputVATTrailModel = await Task.Run(() => VATTrialBalance(VATTrailBalanceDataFile));
+                    errorResult = VATTrialBalanceValidationRule.ValidateVATTrialBalance(OutputVATTrailModel);
+                    break;
+
             }
-            return Json("Data Validated...");
+            return PartialView("~/Views/Home/GetErrorlist.cshtml", errorResult);
         }
 
         //private async Task NewMethod(IFormFile inputVATDatafile)
@@ -419,6 +432,57 @@ namespace STCVAT_Demo.UI.Controllers
                             model.Credit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
                             model.Activity = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
                             model.EndingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
+                            models.Add(model);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+                return null;
+            }
+
+            return models;
+        }
+        private List<VATRetunDetailModel> VATReturnExcelData(IFormFile inputFile)
+        {
+            Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+            DataSet dsexcelRecords = new DataSet();
+            IExcelDataReader reader = null;
+            string message = string.Empty;
+            Stream stream = inputFile.OpenReadStream();
+            List<VATRetunDetailModel> models = new List<VATRetunDetailModel>();
+
+            try
+            {
+                if (inputFile != null)
+                {
+                    if (inputFile.FileName.EndsWith(".xls"))
+                        reader = ExcelReaderFactory.CreateBinaryReader(stream);
+                    else if (inputFile.FileName.EndsWith(".xlsx"))
+                        reader = ExcelReaderFactory.CreateOpenXmlReader(stream);
+                    else
+                        message = "The file format is not supported.";
+
+                    dsexcelRecords = reader.AsDataSet();
+                    reader.Close();
+
+                    if (dsexcelRecords != null && dsexcelRecords.Tables.Count > 0)
+                    {
+                        DataTable inputVatInvoiceDetail = dsexcelRecords.Tables[0];
+
+                        for (int i = 1; i < inputVatInvoiceDetail.Rows.Count; i++)
+                        {
+                            var model = new VATRetunDetailModel();
+                           // model.Account = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column0"]);
+                           // model.Description = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column1"]);
+                           // model.BeginingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column3"]);
+                           // model.Debit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
+                           // model.Credit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
+                           // model.Activity = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
+                           // model.EndingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
                             models.Add(model);
                         }
                     }
