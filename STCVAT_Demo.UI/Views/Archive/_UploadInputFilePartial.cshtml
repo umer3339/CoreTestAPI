@@ -1,0 +1,52 @@
+﻿<div class="col-md-12">
+    <!-- DIRECT CHAT PRIMARY -->
+    <div class="box box-primary direct-chat direct-chat-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Input VAT Data File : </h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                    <i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <form asp-action="UploadFile" data-ajax="true" data-ajax-method="post"
+              enctype="multipart/form-data" data-ajax-success="FinalFormSuccess" asp-controller="Home">
+
+            <div class="box-body">
+                <div class="row" style="padding:20px">
+                    <div class="col-md-3">
+                        <label for="inputEmail3" class="control-label">Input VAT Data File : </label><em class="text-danger">*</em>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input type="file" class="form-control" id="inputVATDatafile" name="inputVATDatafile" onchange="validateinputVATDatafile()">
+                            <span id="span_inputvatdatafile" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputEmail3" class="control-label">Input VAT Attachment : </label><span class="text-danger">*</span>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input type="file" onchange="validateinputVATDatafile()" class="form-control" id="inputEmail3" placeholder="Email">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <a href="../wp-contents/documents/STCVATGroupMembers-InputVATNewTemplate.xlsx" target="_blank" download class="btn btn-primary btn-flat pull-left"><i class="fa fa-download"></i> Download Templete</a>
+                        <button type="submit" disabled="disabled" name="validateSubmit" value="Input" id="SubmitAction" class="btn btn-success pull-right">Validate</button>
+                    </span>
+                </div>
+
+            </div>
+        </form>
+        <!-- /.box-footer-->
+    </div>
+    <!--/.direct-chat -->
+</div>

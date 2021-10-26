@@ -9,14 +9,24 @@
             <div class="box-body" style="overflow-x :auto;max-height:400px">
                 <table id="example1" class="table table-bordered table-striped fc-scroller">
                     <thead>
-                        <tr>Error</tr>
+                        <tr>
+                            <th>
+                                S.No
+                            </th>
+                            <th>
+                                Error Column Name
+                            </th>
+                            <th>Error Details</th>
+                        </tr>
                     </thead>
 
                     <tbody>
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td style="color:red">@item.Value.Item1 (@item.Value.Item2)</td>
+                                <td>@item.Key</td>
+                                <td>@item.Value.Item1 </td>
+                                <td>(@item.Value.Item2)</td>
                             </tr>
 
                         }

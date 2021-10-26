@@ -30,6 +30,7 @@
                                     <th>Created  Date</th>
                                     <th>Invoice Name</th>
                                     <th>Attachments</th>
+                                    <th>Upload</th>
 
                                 </tr>
                             </thead>
@@ -42,6 +43,12 @@
                                         <td>@item.InvoiceName</td>
                                         <td> 
                                         <a href="@item.Attachments" class="btn btn-primary btn-sm" download="download"  ><i class="fa fa-download"></i></a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-primary" onclick="GetInputVATPartial()"><i class="fa fa-upload">&nbsp;INPUT VAT FILE</i></a>
+                                            <a onclick="GetOutputVATPartial()" class="btn btn-primary btn-sm"><i class="fa fa-upload">&nbsp;OUTPUT VAT FILE</i></a>
+                                            <a onclick="GetVATReturnPartial()" class="btn btn-primary btn-sm"><i class="fa fa-upload">&nbsp;VAT RETURN  FILE</i></a>
+                                            <a onclick="GetVATTrialBalance()" class="btn btn-primary btn-sm"><i class="fa fa-upload">&nbsp;TRIAL BALANCE</i></a>
                                         </td>
                                     </tr>
                                 }
@@ -59,3 +66,59 @@
     </section>
     <!-- /.content -->
 </div>  
+
+
+<script type="text/javascript">
+    function GetInputVATPartial() {
+        $.get("/Archive/InputVATFilePartial", function (data) {
+            $("#modalBody").html(data);
+            $("#myModal").modal('show');
+            $("#h4TitleText").text("Input VAT File Upload !!!");
+        })
+    }
+
+    function GetOutputVATPartial() {
+        $.get("/Archive/OuputFilePartial", function (data) {
+            $("#modalBody").html(data);
+            $("#myModal").modal('show');
+            $("#h4TitleText").text("Output VAT File Upload !!!");
+        })
+    }
+
+    function GetVATReturnPartial() {
+        $.get("/Archive/ReturnVATFilePartial", function (data) {
+            $("#modalBody").html(data);
+            $("#myModal").modal('show');
+            $("#h4TitleText").text("Return VAT File Upload !!!");
+        })
+    }
+
+
+    function GetVATTrialBalance() {
+        $.get("/Archive/TrialBalanceFilePartial", function (data) {
+            $("#modalBody").html(data);
+            $("#myModal").modal('show');
+            $("#h4TitleText").text("Trial Balance File Upload !!!");
+        })
+    }
+</script>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="h4TitleText">File Upload</h4>
+            </div>
+            <div class="modal-body">
+                <div id="modalBody"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

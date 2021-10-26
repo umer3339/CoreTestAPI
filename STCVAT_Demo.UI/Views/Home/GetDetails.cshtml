@@ -5,15 +5,20 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>
-            Input VAT Data
-            <small>Input VAT Data File</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-
-            <li class="active">Input VAT Data File </li>
-        </ol>
+        <div class="row">
+            <div class="col-md-3">
+                <a asp-action="GetDetails" asp-route-fileName="input" asp-controller="Home" class="btn btn-primary">Input VAT File Details</a>
+            </div>
+            <div class="col-md-3">
+                <a asp-action="GetDetails" asp-route-fileName="output" asp-controller="Home" class="btn btn-info">Output VAT File Details</a>
+            </div>
+            <div class="col-md-3">
+                <a asp-action="GetDetails" asp-route-fileName="return" asp-controller="Home" class="btn btn-danger">VAT Return File Details</a>
+            </div>
+            <div class="col-md-3">
+                <a asp-action="GetDetails" asp-route-fileName="trial" asp-controller="Home" class="btn btn-warning">VAT Trial Balance File Details</a>
+            </div>
+        </div>
     </section>
 
     <!-- Main content -->
@@ -24,7 +29,7 @@
 
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">Input VAT Data File List</h3>
+                        <h3 class="box-title">@ViewBag.PageName</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body" style="overflow-y :auto">

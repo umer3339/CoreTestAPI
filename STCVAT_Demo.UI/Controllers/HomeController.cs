@@ -72,7 +72,7 @@ namespace STCVAT_Demo.UI.Controllers
                     break;
                 case "btnVATReturnDatafile":
                     var VATReturnModel = await Task.Run(() => VATReturnExcelData(VATReturnDataFile));
-                     errorResult = VATReturnValidationRule.ValidateVATReturn(VATReturnModel);
+                    errorResult = VATReturnValidationRule.ValidateVATReturn(VATReturnModel);
                     break;
                 case "btnVATTrailBalanceDataFile":
                     var OutputVATTrailModel = await Task.Run(() => VATTrialBalance(VATTrailBalanceDataFile));
@@ -83,23 +83,29 @@ namespace STCVAT_Demo.UI.Controllers
             return PartialView("~/Views/Home/GetErrorlist.cshtml", errorResult);
         }
 
-        //private async Task NewMethod(IFormFile inputVATDatafile)
-        //{
-        //    InvoiceDetail model = new InvoiceDetail();
-        //    model.AttachmentList = new List<IFormFile>() { inputVATDatafile };
-        //    model.ExcelType = VATExcelType.InputDataFile;
-        //    model.InvoiceExcelFile = inputVATDatafile;
-        //    model.InvoiceName = "Input Invocie";
-        //    model.UserName = "Demo";
 
-        //    await UploadData(model);
-        //}
-
-        public async Task<IActionResult> GetDetails()
+        public async Task<IActionResult> GetDetails(string fileName)
         {
-            //var data = await _IInputVatDataFileRepository.GetAllEntities(x => x.IsDeleted);
-            //return View("~/Views/Home/GetDetails.cshtml");
-            var data = await _IInputVatDataFileRepository.GetAllEntities(x => x.IsDeleted==true);
+            switch (fileName)
+            {
+                case "input":
+                    ViewBag.PageName = "Input VAT File Details.";
+                    break;
+                case "output":
+                    ViewBag.PageName = "Output VAT File Details.";
+                    break;
+                case "return":
+                    ViewBag.PageName = "Return VAT File Details.";
+                    break;
+                case "trial":
+                    ViewBag.PageName = "Trial Balance VAT File Details.";
+                    break;
+                default:
+                    ViewBag.PageName = "Input VAT File Details.";
+                    break;
+
+            }
+            var data = await _IInputVatDataFileRepository.GetAllEntities(x => x.IsDeleted == true);
             return View(data.TEntities);
         }
         public IActionResult Privacy()
@@ -478,13 +484,13 @@ namespace STCVAT_Demo.UI.Controllers
                         for (int i = 1; i < inputVatInvoiceDetail.Rows.Count; i++)
                         {
                             var model = new VATRetunDetailModel();
-                           // model.Account = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column0"]);
-                           // model.Description = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column1"]);
-                           // model.BeginingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column3"]);
-                           // model.Debit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
-                           // model.Credit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
-                           // model.Activity = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
-                           // model.EndingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
+                            // model.Account = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column0"]);
+                            // model.Description = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column1"]);
+                            // model.BeginingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column3"]);
+                            // model.Debit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
+                            // model.Credit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
+                            // model.Activity = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
+                            // model.EndingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
                             models.Add(model);
                         }
                     }

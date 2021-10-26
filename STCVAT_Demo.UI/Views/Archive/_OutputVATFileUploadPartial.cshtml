@@ -1,0 +1,49 @@
+﻿<div class="col-md-12">
+    <!-- DIRECT CHAT PRIMARY -->
+    <div class="box box-success direct-chat direct-chat-success">
+        <div class="box-header with-border">
+            <h3 class="box-title">OutPut VAT Data File : </h3>
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                    <i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row" style="padding:20px">
+                <div class="col-md-3">
+                    <label for="inputEmail3" class="control-label">Output VAT Data File : </label><em class="text-danger">*</em>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <input type="file" class="form-control" id="outputVATDatafile" name="outputVATDatafile" onchange="validateOutputVATDatafile()" />
+                        <span id="span_outputvatdatafile" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputEmail3" class="control-label">Output VAT Attachment : </label><span class="text-danger">*</span>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <input type="file" class="form-control" id="inputEmail3" placeholder="Email">
+                        <input type="hidden" value="0" id="hdnoutputVATDatafile" name="hdnoutputVATDatafile" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <a href="../wp-contents/documents/STCVATGroupMembers-OutputVATNewTemplate.xlsx" target="_blank" download class="btn btn-success btn-flat pull-left"><i class="fa fa-download"></i> Download Templete</a>
+                    <button type="submit" class="btn btn-primary pull-right" disabled="disabled" value="btnoutputVATDatafile" name="validateSubmit" id="SubmitActionoutputVAT">Validate</button>
+                </span>
+            </div>
+
+        </div>
+        <!-- /.box-footer-->
+    </div>
+    <!--/.direct-chat -->
+</div>
