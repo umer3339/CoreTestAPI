@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using STCAPI.Core.Entities.InvoiceDetails;
 using STCAPI.Core.Entities.Reconcilation;
 using STCAPI.Core.Entities.RequestDetail;
 using STCAPI.Core.Entities.STCVAT;
@@ -41,5 +42,6 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<RequestDetailModel> RequestDetailModels { get; set; }
         public virtual DbSet<PortalMenuMaster> PortalMenuMasters { get; set; }
         public virtual DbSet<UserManagement.PortalAccess> PortalAccesses { get; set; }
+        public virtual DbSet<UploadInvoiceDetails> UploadInvoiceDetailses { get; set; }
     }
 }
