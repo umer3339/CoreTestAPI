@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using STAAPI.Infrastructure.Repository.GenericRepository;
+using STCAPI.Core.Entities.Common;
 using STCAPI.Core.Entities.UserManagement;
+using STCAPI.Core.ViewModel.ResponseModel;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -53,13 +55,15 @@ namespace STCAPI.Controllers.UserManagement
 
             });
 
-            return Ok(portalAccessModels.TEntities);
+            var response = GetFormattedResponse(portalAccessModels, userName);
+            return Ok(response);
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateUserRight(List<PortalAccess> portalAccesses)
         {
-            portalAccesses.ForEach(data => {
+            portalAccesses.ForEach(data =>
+            {
                 data.CreatedBy = "Bhavesh Deepak";
                 data.CreatedDate = DateTime.Now;
                 data.IsActive = true;
@@ -70,6 +74,89 @@ namespace STCAPI.Controllers.UserManagement
 
         }
 
+        /// <summary>
+        /// Code to get the formatted user rights as per requirement of UI developers
+        /// </summary>
+        /// <param name="portalAccessDetails"></param>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        private AdminPortalResponseModel GetFormattedResponse(ResponseModel<PortalMenuMaster, int> portalAccessDetails, string userName)
+        {
+            var model = new AdminPortalResponseModel();
+            var formList = new List<Form>();
+            var dashBoardList = new List<Dashboard>();
+            var reportList = new List<STCAPI.Core.ViewModel.ResponseModel.Report>();
+            var subStreamList = new List<SubStream>();
+            var mainStreamList = new List<MainStream>();
+            var stageList = new List<Stage>();
+
+
+            foreach (var stageData in portalAccessDetails.TEntities.GroupBy(x => x.Stage))
+            {
+                var stageModel = new Stage();
+                stageModel.stageName = stageData.Key;
+
+                foreach (var mainStreamData in stageData.GroupBy(x => x.MainStream))
+                {
+                    var mainStreamModel = new MainStream();
+                    mainStreamModel.streamName = mainStreamData.Key;
+
+
+                    foreach (var subStreamData in mainStreamData.GroupBy(x => x.Stream))
+                    {
+                        var subStreamModel = new SubStream();
+                        subStreamModel.subStreamName = subStreamData.Key;
+                        subStreamList.Add(subStreamModel);
+
+                        foreach (var objectData in subStreamData)
+                        {
+
+                            switch (objectData.ObjectName)
+                            {
+                                case "Form":
+                                    var formModel = new Form();
+                                    formModel.accessLevel = objectData.Flag;
+                                    formModel.name = "Form";
+                                    formList.Add(formModel);
+                                    break;
+                                case "Dashboard":
+                                    var dashboard = new Dashboard();
+                                    dashboard.accessLevel = objectData.Flag;
+                                    dashboard.name = "Dashboard";
+                                    dashBoardList.Add(dashboard);
+                                    break;
+                                case "Report":
+                                    var reportModel = new STCAPI.Core.ViewModel.ResponseModel.Report();
+                                    reportModel.accessLevel = objectData.Flag;
+                                    reportModel.name = "Report";
+                                    reportList.Add(reportModel);
+                                    break;
+                            }
+
+                        }
+
+                        subStreamModel.form = formList;
+                        subStreamModel.dashboard = dashBoardList;
+                        subStreamModel.report = reportList;
+                    }
+                    mainStreamModel.subStream = subStreamList;
+                    mainStreamList.Add(mainStreamModel);
+                }
+                stageModel.mainStream = mainStreamList;
+                stageList.Add(stageModel);
+
+            }
+            model.directory = "Basserah";
+            model.userName =userName;
+            model.stages = stageList;
+            return model;
+        }
+
+        /// <summary>
+        /// Get the User Access right based on user name detail
+        /// </summary>
+        /// <param name="inputFile"></param>
+        /// <returns></returns>
         private async Task<List<PortalMenuMaster>> GetPortalMenuList(IFormFile inputFile)
         {
             Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);

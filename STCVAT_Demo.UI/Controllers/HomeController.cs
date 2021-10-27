@@ -103,7 +103,6 @@ namespace STCVAT_Demo.UI.Controllers
                 default:
                     ViewBag.PageName = "Input VAT File Details.";
                     break;
-
             }
             var data = await _IInputVatDataFileRepository.GetAllEntities(x => x.IsDeleted == true);
             return View(data.TEntities);

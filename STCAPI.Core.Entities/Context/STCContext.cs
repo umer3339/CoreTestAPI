@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using STCAPI.Core.Entities.InvoiceDetails;
 using STCAPI.Core.Entities.Reconcilation;
+using STCAPI.Core.Entities.Report;
 using STCAPI.Core.Entities.RequestDetail;
 using STCAPI.Core.Entities.STCVAT;
 using STCAPI.Core.Entities.UserManagement;
@@ -43,5 +44,6 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<PortalMenuMaster> PortalMenuMasters { get; set; }
         public virtual DbSet<UserManagement.PortalAccess> PortalAccesses { get; set; }
         public virtual DbSet<UploadInvoiceDetails> UploadInvoiceDetailses { get; set; }
+        public virtual DbSet<NewReportModel> NewReportModels { get; set; }
     }
 }
