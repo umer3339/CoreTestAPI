@@ -92,7 +92,7 @@ namespace STCAPI.Controllers.Report
         public async Task<IActionResult> GetReportDetails()
         {
             List<NewReportViewModel> models = new List<NewReportViewModel>();
-            var dbResponseModels = await _INewReportModelRepository.GetAllEntities(x => x.IsActive && !x.IsDeleted);
+            var dbResponseModels = await _INewReportModelRepository.GetAllEntities(x=>x.IsActive && !x.IsDeleted);
 
             dbResponseModels.TEntities.ToList().ForEach(item =>
             {
@@ -112,9 +112,7 @@ namespace STCAPI.Controllers.Report
             return Ok(models);
         }
 
-        [HttpDelete]
-        [Produces("application/json")]
-        [Consumes("application/json")]
+        [HttpGet]
         public async Task<IActionResult> DeleteReport(int id)
         {
             var response = await _INewReportModelRepository.GetAllEntities(x => x.Id == id);
@@ -170,9 +168,39 @@ namespace STCAPI.Controllers.Report
         [Consumes("application/json")]
         public async Task<IActionResult> UpdateReportDetails(NewReportViewModel model)
         {
-            var dbResponse = await _INewReportModelRepository.UpdateEntity(model);
-            return Ok(dbResponse);
 
+
+            var response = await _INewReportModelRepository.GetAllEntities(x => x.Id == model.Id);
+
+            if (response.TEntities.Any())
+            {
+                response.TEntities.ToList().ForEach(item =>
+                {
+                    item.IsActive = false;
+                    item.IsDeleted = true;
+                });
+
+                var deleteResponse = await _INewReportModelRepository.UpdateEntity(response.TEntities.First());
+
+                var dbModel = new NewReportModel();
+
+                dbModel.MainStream = model.Main_Stream;
+                dbModel.Stream = model.Stream;
+                dbModel.ReportName = model.Report_Name;
+                dbModel.ReportNumber = model.Report_Number;
+                dbModel.ReportLongName = model.Report_Long_Name;
+                dbModel.ReportShortName = model.Report_Short_Name;
+                dbModel.ReportDescription = model.Report_Description;
+                dbModel.IsActive = true;
+
+                NewReportModel[] dbModelArray = { dbModel };
+                var dbResponse = await _INewReportModelRepository.CreateEntity(dbModelArray);
+
+                return Ok(dbResponse);
+
+            }
+
+            return BadRequest("Id not found ..");
         }
     }
 }

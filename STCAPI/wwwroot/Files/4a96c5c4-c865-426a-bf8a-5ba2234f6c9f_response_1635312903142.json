@@ -1,0 +1,4766 @@
+{
+  "userName": "Demo",
+  "directory": "Basserah",
+  "stages": [
+    {
+      "stageName": "Validation",
+      "accessLevel": false,
+      "mainStream": [
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageName": "Reconciliation",
+      "accessLevel": false,
+      "mainStream": [
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageName": "Adjustment",
+      "accessLevel": false,
+      "mainStream": [
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageName": "VAT Reports",
+      "accessLevel": false,
+      "mainStream": [
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "streamName": "STC KSA",
+          "accessLevel": false,
+          "subStream": [
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": null,
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            },
+            {
+              "subStreamName": "P2P",
+              "accessLevel": false,
+              "form": [
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Form"
+                }
+              ],
+              "dashboard": [
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Dashboard"
+                }
+              ],
+              "report": [
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                },
+                {
+                  "accessLevel": false,
+                  "name": "Report"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

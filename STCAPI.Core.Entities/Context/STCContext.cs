@@ -45,5 +45,6 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<UserManagement.PortalAccess> PortalAccesses { get; set; }
         public virtual DbSet<UploadInvoiceDetails> UploadInvoiceDetailses { get; set; }
         public virtual DbSet<NewReportModel> NewReportModels { get; set; }
+       public virtual DbSet<MainStreamModel> MainStreamModels { get; set; }
     }
 }
