@@ -35,7 +35,7 @@ namespace STCAPI.Controllers.ExcelReader
             IGenericRepository<InputVATDataFile, int> inputVATDatFileRepository,
             IGenericRepository<VATTrailBalanceModel, int> vatTrialBalanceRepository,
             IGenericRepository<STCVATOutputModel, int> stcVatOutModelRepo,
-            IGenericRepository<VATReturnModel, int> vatReturnModelRepository, 
+            IGenericRepository<VATReturnModel, int> vatReturnModelRepository,
             IGenericRepository<UploadInvoiceDetail, int> uploadInvoiceRepo, ILogger<ReadExcelData> logger)
         {
             _IHostingEnviroment = hostingEnvironment;
@@ -101,13 +101,14 @@ namespace STCAPI.Controllers.ExcelReader
                     case VATExcelType.VATTrialBalanceDataFile:
                         var balanceDataModel = await Task.Run(() => VATTrialBalance(model.InvoiceExcelFile));
                         var trialDBModels = await ConvertVATTrialBalanceModelToDBModel(balanceDataModel);
-                        trialDBModels.ForEach(data => {
+                        trialDBModels.ForEach(data =>
+                        {
                             data.UploadInvoiceDetailId = uploadInvoiceId;
                         });
                         var trialDataResponse = await CreateTrialBalance(trialDBModels, model.UserName);
                         break;
                 }
-                return await Task.Run(()=> Ok("FIle Uploaded and Managed..."));
+                return await Task.Run(() => Ok("FIle Uploaded and Managed..."));
             }
             catch (Exception ex)
             {
@@ -116,10 +117,18 @@ namespace STCAPI.Controllers.ExcelReader
             return await Task.Run(() => BadRequest("Somthing wents wrong Please contact admin Team.."));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetExcelArchiveDetails()
+        {
+            var response = await _IUploadInvoiceRepository.GetAllEntities(x => x.IsActive && !x.IsDeleted);
+            return Ok(response);
+        }
+
 
         #region PrivateMethod
         [NonAction]
-        public  async Task UploadData(InvoiceDetail model) {
+        public async Task UploadData(InvoiceDetail model)
+        {
 
             try
             {
@@ -172,7 +181,8 @@ namespace STCAPI.Controllers.ExcelReader
                     case VATExcelType.VATTrialBalanceDataFile:
                         var balanceDataModel = await Task.Run(() => VATTrialBalance(model.InvoiceExcelFile));
                         var trialDBModels = await ConvertVATTrialBalanceModelToDBModel(balanceDataModel);
-                        trialDBModels.ForEach(data => {
+                        trialDBModels.ForEach(data =>
+                        {
                             data.UploadInvoiceDetailId = uploadInvoiceId;
                         });
                         var trialDataResponse = await CreateTrialBalance(trialDBModels, model.UserName);

@@ -27,21 +27,29 @@ namespace STCAPI.Controllers.ExcelReader
         [HttpPost]
         public async Task<IActionResult> ValidateOutPutFile([FromForm] InvoiceDetail model)
         {
-            IDictionary<int, (string, string)> errorResult = new Dictionary<int, (string, string)>();
+            try
+            {
+                IDictionary<int, (string, string)> errorResult = new Dictionary<int, (string, string)>();
 
-            var attachmentList = await new BlobHelper().UploadDocument(model.AttachmentList,
-                _IHostingEnviroment);
+                var attachmentList = await new BlobHelper().UploadDocument(model.AttachmentList,
+                    _IHostingEnviroment);
 
-            var invoiceFiles = new List<IFormFile>() { model.InvoiceExcelFile };
+                var invoiceFiles = new List<IFormFile>() { model.InvoiceExcelFile };
 
-            var uploadFileDetails = await new BlobHelper().UploadDocument(invoiceFiles, _IHostingEnviroment);
+                var uploadFileDetails = await new BlobHelper().UploadDocument(invoiceFiles, _IHostingEnviroment);
 
-            var OutputVATModel = await Task.Run(() => OutputVATExcelFle(model.InvoiceExcelFile));
-            errorResult = OutputVATValidationRule.ValidateOutputVatData(OutputVATModel);
+                var OutputVATModel = await Task.Run(() => OutputVATExcelFle(model.InvoiceExcelFile));
+                errorResult = OutputVATValidationRule.ValidateOutputVatData(OutputVATModel);
 
-            var errorDetails = GetErrorDetails(errorResult);
+                var errorDetails = GetErrorDetails(errorResult);
 
-            return Ok(errorDetails);
+                return Ok(errorDetails);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Internal server error. Please contact admin");
+            }
+
         }
 
         private List<OutPutVATModel> OutputVATExcelFle(IFormFile inputFile)
