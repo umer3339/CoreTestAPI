@@ -14,6 +14,7 @@ namespace STCAPI.Core.Entities.Context
     {
         private readonly string _connectionString;
 
+        public STCContext() { }
         public STCContext(IConfiguration configuration) {
             _connectionString = configuration.GetSection("ConnectionStrings:DefaultConnection").Value;
         }
