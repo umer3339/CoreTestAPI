@@ -28,6 +28,29 @@ namespace STCAPI.Controllers.AdminPortal
             return Ok(response);
         }
 
+        [HttpGet]
+        [Produces("application/json")]
+        [Consumes("application/json")]
+        public async Task<IActionResult> GetRawDataStream()
+        {
+            var response = await _IRawDataStreamRepository.GetAllEntities(x => x.IsActive && !x.IsDeleted);
+            return Ok(response);
+        }
+
+        [HttpDelete]
+        [Produces("application/json")]
+        [Consumes("application/json")]
+        public async Task<IActionResult> DeleteRawDataStream(int id)
+        {
+            var deleteModel = await _IRawDataStreamRepository.GetAllEntities(x => x.Id == id);
+            deleteModel.TEntities.ToList().ForEach(data => {
+                data.IsActive = false;
+                data.IsDeleted = true;
+            });
+
+            var response = await _IRawDataStreamRepository.DeleteEntity(deleteModel.TEntities.ToArray());
+            return Ok(response);
+        }
 
     }
 }

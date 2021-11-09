@@ -14,31 +14,25 @@ namespace STCAPI.Core.ViewModel.ResponseModel
     }
 
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
-    public class Form
-    {
-        public bool accessLevel { get; set; }
-        public object name { get; set; }
-    }
 
-    public class Dashboard
+    public class Datum
     {
         public bool accessLevel { get; set; }
         public string name { get; set; }
     }
 
-    public class Report
+    public class ObjectData
     {
-        public bool accessLevel { get; set; }
         public string name { get; set; }
+        public bool accessLevel { get; set; }
+        public List<Datum> data { get; set; }
     }
 
     public class SubStream
     {
         public string subStreamName { get; set; }
         public bool accessLevel { get; set; }
-        public List<Form> form { get; set; }
-        public List<Dashboard> dashboard { get; set; }
-        public List<Report> report { get; set; }
+        public List<ObjectData> Object { get; set; }
     }
 
     public class MainStream

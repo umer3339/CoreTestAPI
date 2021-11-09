@@ -7,6 +7,7 @@ using STCAPI.Core.Entities.RequestDetail;
 using STCAPI.Core.Entities.STCVAT;
 using STCAPI.Core.Entities.UserManagement;
 using STCAPI.Core.Entities.VATDetailUpload;
+using STCAPI.DataLayer.AdminPortal;
 
 namespace STCAPI.Core.Entities.Context
 {
@@ -47,5 +48,6 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<UploadInvoiceDetails> UploadInvoiceDetailses { get; set; }
         public virtual DbSet<NewReportModel> NewReportModels { get; set; }
        public virtual DbSet<MainStreamModel> MainStreamModels { get; set; }
+        public virtual DbSet<RawDataStream> RawDataStreams { get; set; }
     }
 }

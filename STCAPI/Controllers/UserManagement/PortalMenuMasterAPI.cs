@@ -54,7 +54,7 @@ namespace STCAPI.Controllers.UserManagement
                 });
 
             });
-
+           
             var response = GetFormattedResponse(portalAccessModels, userName);
             return Ok(response);
         }
@@ -83,61 +83,52 @@ namespace STCAPI.Controllers.UserManagement
         private AdminPortalResponseModel GetFormattedResponse(ResponseModel<PortalMenuMaster, int> portalAccessDetails, string userName)
         {
             var model = new AdminPortalResponseModel();
-            var formList = new List<Form>();
-            var dashBoardList = new List<Dashboard>();
-            var reportList = new List<STCAPI.Core.ViewModel.ResponseModel.Report>();
+           
+           
             var subStreamList = new List<SubStream>();
             var mainStreamList = new List<MainStream>();
             var stageList = new List<Stage>();
 
+            var resultSet = portalAccessDetails.TEntities.OrderBy(x => x.ObjectName).ToList();
 
-            foreach (var stageData in portalAccessDetails.TEntities.GroupBy(x => x.Stage))
+            foreach (var stageData in resultSet.GroupBy(x => x.Stage))
             {
                 var stageModel = new Stage();
                 stageModel.stageName = stageData.Key;
 
-                foreach (var mainStreamData in stageData.GroupBy(x => x.MainStream))
+                foreach (var mainStreamData in stageData.Where(x=>x.Stage==stageData.Key).GroupBy(x => x.MainStream))
                 {
                     var mainStreamModel = new MainStream();
                     mainStreamModel.streamName = mainStreamData.Key;
 
 
-                    foreach (var subStreamData in mainStreamData.GroupBy(x => x.Stream))
+                    foreach (var subStreamData in mainStreamData.Where(x=>x.MainStream==mainStreamData.Key).GroupBy(x => x.Stream))
                     {
                         var subStreamModel = new SubStream();
                         subStreamModel.subStreamName = subStreamData.Key;
                         subStreamList.Add(subStreamModel);
-
-                        foreach (var objectData in subStreamData)
+                        var objectDatas = new List<ObjectData>();
+                        foreach (var objectData in subStreamData.Where(x=>x.Stream==subStreamData.Key).GroupBy(x=> x.ObjectName))
                         {
+                            var objectData1 = new ObjectData();
+                            objectData1.name = objectData.Key;
+                            objectData1.accessLevel = false;
 
-                            switch (objectData.ObjectName)
-                            {
-                                case "Form":
-                                    var formModel = new Form();
-                                    formModel.accessLevel = objectData.Flag;
-                                    formModel.name = "Form";
-                                    formList.Add(formModel);
-                                    break;
-                                case "Dashboard":
-                                    var dashboard = new Dashboard();
-                                    dashboard.accessLevel = objectData.Flag;
-                                    dashboard.name = "Dashboard";
-                                    dashBoardList.Add(dashboard);
-                                    break;
-                                case "Report":
-                                    var reportModel = new STCAPI.Core.ViewModel.ResponseModel.Report();
-                                    reportModel.accessLevel = objectData.Flag;
-                                    reportModel.name = "Report";
-                                    reportList.Add(reportModel);
-                                    break;
+                            var datums = new List<Datum>();
+                            foreach (var data in objectData) {
+                                var datum = new Datum();
+                                datum.accessLevel = data.Flag;
+                                datum.name = data.Name;
+                                datums.Add(datum);
                             }
-
+                            objectData1.data = datums;
+                            objectDatas.Add(objectData1);
                         }
 
-                        subStreamModel.form = formList;
-                        subStreamModel.dashboard = dashBoardList;
-                        subStreamModel.report = reportList;
+                        //subStreamModel.form = formList;
+                        //subStreamModel.dashboard = dashBoardList;
+                        //subStreamModel.report = reportList;
+                        subStreamModel.Object = objectDatas;
                     }
                     mainStreamModel.subStream = subStreamList;
                     mainStreamList.Add(mainStreamModel);
