@@ -52,7 +52,7 @@ namespace STCAPI.Controllers.AdminPortal
         }
 
 
-        [HttpDelete]
+        [HttpGet]
         [Produces("application/json")]
         public async Task<IActionResult> DeleteStream(int id)
         {

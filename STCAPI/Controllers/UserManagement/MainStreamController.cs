@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using STAAPI.Infrastructure.Repository.GenericRepository;
 using STCAPI.Core.Entities.UserManagement;
+using STCAPI.Core.ViewModel.ResponseModel;
+using STCAPI.DataLayer.AdminPortal;
+using STCAPI.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,21 +16,24 @@ namespace STCAPI.Controllers.UserManagement
     [ApiController]
     public class MainStreamController : ControllerBase
     {
-        private readonly IGenericRepository<MainStreamModel, int> _IMainStreamRepository;
-        public MainStreamController(IGenericRepository<MainStreamModel, int> mainStreamRepo)
+        private readonly IGenericRepository<MainStreamMaster, int> _IMainStreamRepository;
+        private readonly IGenericRepository<StageMaster, int> _IStageMasterRepository;
+        public MainStreamController(IGenericRepository<MainStreamMaster, int> mainStreamRepo,
+            IGenericRepository<StageMaster, int> iStageMasterRepository)
         {
             _IMainStreamRepository = mainStreamRepo;
+            _IStageMasterRepository = iStageMasterRepository;
         }
 
         [HttpPost]
         [Produces("application/json")]
         [Consumes("application/json")]
 
-        public async Task<IActionResult> CreateMainStream(MainStreamModel model)
+        public async Task<IActionResult> CreateMainStream(MainStreamMaster model)
         {
             model.IsDeleted = false;
             model.IsActive = true;
-            MainStreamModel[] dbModelArray = { model };
+            MainStreamMaster[] dbModelArray = { model };
             var response = await _IMainStreamRepository.CreateEntity(dbModelArray);
             return Ok(response);
         }
@@ -38,7 +44,11 @@ namespace STCAPI.Controllers.UserManagement
 
         public async Task<IActionResult> GetMainStreamDetails()
         {
-            var response = await _IMainStreamRepository.GetAllEntities(x => x.IsActive && !x.IsDeleted);
+            var mainStreamModel = await _IMainStreamRepository.GetAllEntities(x => x.IsActive && !x.IsDeleted);
+            
+            var stageModel= await _IStageMasterRepository.GetAllEntities(x => x.IsActive && !x.IsDeleted);
+
+            var response= CommonServiceHelper.GetMainStreamDetail(mainStreamModel, stageModel);
 
             return Ok(response);
         }
@@ -47,10 +57,10 @@ namespace STCAPI.Controllers.UserManagement
         [Produces("application/json")]
         [Consumes("application/json")]
 
-        public async Task<IActionResult> UpdateMainStreamDetails(MainStreamModel model)
+        public async Task<IActionResult> UpdateMainStreamDetails(MainStreamMaster model)
         {
 
-            var deleteModel = new MainStreamModel()
+            var deleteModel = new MainStreamMaster()
             {
                 Id = model.Id,
                 IsActive = false,
@@ -61,7 +71,7 @@ namespace STCAPI.Controllers.UserManagement
 
             model.Id = 0;
 
-            MainStreamModel[] dbModelArray = { model };
+            MainStreamMaster[] dbModelArray = { model };
 
             var createResponse = await _IMainStreamRepository.CreateEntity(dbModelArray);
 

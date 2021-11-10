@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using STCAPI.Core.Entities.Configuration;
 using STCAPI.Core.Entities.InvoiceDetails;
 using STCAPI.Core.Entities.Reconcilation;
 using STCAPI.Core.Entities.Report;
@@ -11,17 +12,18 @@ using STCAPI.DataLayer.AdminPortal;
 
 namespace STCAPI.Core.Entities.Context
 {
-    public class STCContext:DbContext
+    public class STCContext : DbContext
     {
         private readonly string _connectionString;
 
         public STCContext() { }
-        public STCContext(IConfiguration configuration) {
+        public STCContext(IConfiguration configuration)
+        {
             _connectionString = configuration.GetSection("ConnectionStrings:DefaultConnection").Value;
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(_connectionString,ServerVersion.AutoDetect(_connectionString));
+            optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -29,7 +31,7 @@ namespace STCAPI.Core.Entities.Context
             modelBuilder.ApplyConfiguration(new DemoConfiguration());
             modelBuilder.ApplyConfiguration(new STCVATConfiguration());
         }
-         
+
         public virtual DbSet<STCVATForm> STCVATForms { get; set; }
         public virtual DbSet<STCPostValidation> STCPostValidations { get; set; }
         public virtual DbSet<StageModel> StageModels { get; set; }
@@ -47,7 +49,11 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<UserManagement.PortalAccess> PortalAccesses { get; set; }
         public virtual DbSet<UploadInvoiceDetails> UploadInvoiceDetailses { get; set; }
         public virtual DbSet<NewReportModel> NewReportModels { get; set; }
-       public virtual DbSet<MainStreamModel> MainStreamModels { get; set; }
+        public virtual DbSet<MainStreamModel> MainStreamModels { get; set; }
         public virtual DbSet<RawDataStream> RawDataStreams { get; set; }
+        public virtual DbSet<StageMaster> StageMasters { get; set; }
+        public virtual DbSet<StreamMaster> StreamMasters { get; set; }
+        public virtual DbSet<ConfigurationMaster> ConfigurationMasters { get; set; }
+        public virtual DbSet<MainStreamMaster> MainStreamMasters { get; set; }
     }
 }

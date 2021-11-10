@@ -23,11 +23,25 @@ namespace STCAPI.Controllers.UserManagement
     {
         private readonly IGenericRepository<PortalMenuMaster, int> _IPortalMenuRepository;
         private readonly IGenericRepository<PortalAccess, int> _IPortalAccessRepository;
-        public PortalMenuMasterAPI(IGenericRepository<PortalMenuMaster, int> portalMenuReposiory, IGenericRepository<PortalAccess, int> portalAcessRepo)
+
+        /// <summary>
+        /// Constructor for Portal Master API to inject the services
+        /// </summary>
+        /// <param name="portalMenuReposiory"></param>
+        /// <param name="portalAcessRepo"></param>
+        public PortalMenuMasterAPI(IGenericRepository<PortalMenuMaster, int> portalMenuReposiory,
+            IGenericRepository<PortalAccess, int> portalAcessRepo)
         {
             _IPortalMenuRepository = portalMenuReposiory;
             _IPortalAccessRepository = portalAcessRepo;
         }
+
+        /// <summary>
+        /// Add the User Menu detail
+        /// </summary>
+        /// <param name="formFile"></param>
+        /// <returns></returns>
+        
         [HttpPost]
         public async Task<IActionResult> CreatePortalMenu([FromForm] PortalMenuMaster formFile)
         {
@@ -54,7 +68,7 @@ namespace STCAPI.Controllers.UserManagement
                 });
 
             });
-           
+
             var response = GetFormattedResponse(portalAccessModels, userName);
             return Ok(response);
         }
@@ -83,8 +97,8 @@ namespace STCAPI.Controllers.UserManagement
         private AdminPortalResponseModel GetFormattedResponse(ResponseModel<PortalMenuMaster, int> portalAccessDetails, string userName)
         {
             var model = new AdminPortalResponseModel();
-           
-           
+
+
             var subStreamList = new List<SubStream>();
             var mainStreamList = new List<MainStream>();
             var stageList = new List<Stage>();
@@ -96,38 +110,39 @@ namespace STCAPI.Controllers.UserManagement
                 var stageModel = new Stage();
                 stageModel.stageName = stageData.Key;
 
-                foreach (var mainStreamData in stageData.Where(x=>x.Stage==stageData.Key).GroupBy(x => x.MainStream))
+                foreach (var mainStreamData in stageData.Where(x => x.Stage == stageData.Key).GroupBy(x => x.MainStream))
                 {
                     var mainStreamModel = new MainStream();
                     mainStreamModel.streamName = mainStreamData.Key;
 
 
-                    foreach (var subStreamData in mainStreamData.Where(x=>x.MainStream==mainStreamData.Key).GroupBy(x => x.Stream))
+                    foreach (var subStreamData in mainStreamData.Where(x => x.MainStream == mainStreamData.Key).GroupBy(x => x.Stream))
                     {
                         var subStreamModel = new SubStream();
                         subStreamModel.subStreamName = subStreamData.Key;
                         subStreamList.Add(subStreamModel);
                         var objectDatas = new List<ObjectData>();
-                        foreach (var objectData in subStreamData.Where(x=>x.Stream==subStreamData.Key).GroupBy(x=> x.ObjectName))
+                        foreach (var objectData in subStreamData.Where(x => x.Stream == subStreamData.Key).GroupBy(x => x.ObjectName))
                         {
                             var objectData1 = new ObjectData();
                             objectData1.name = objectData.Key;
                             objectData1.accessLevel = false;
 
                             var datums = new List<Datum>();
-                            foreach (var data in objectData) {
+                            foreach (var data in objectData)
+                            {
                                 var datum = new Datum();
+
+                                datum.PortalId = data.Id;
                                 datum.accessLevel = data.Flag;
                                 datum.name = data.Name;
+
                                 datums.Add(datum);
                             }
                             objectData1.data = datums;
                             objectDatas.Add(objectData1);
                         }
 
-                        //subStreamModel.form = formList;
-                        //subStreamModel.dashboard = dashBoardList;
-                        //subStreamModel.report = reportList;
                         subStreamModel.Object = objectDatas;
                     }
                     mainStreamModel.subStream = subStreamList;
@@ -138,7 +153,7 @@ namespace STCAPI.Controllers.UserManagement
 
             }
             model.directory = "Basserah";
-            model.userName =userName;
+            model.userName = userName;
             model.stages = stageList;
             return model;
         }

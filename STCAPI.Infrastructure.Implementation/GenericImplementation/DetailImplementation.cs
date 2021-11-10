@@ -49,11 +49,8 @@ namespace STCAPI.Infrastructure.Implementation.GenericImplementation
         {
             try
             {
-                using (context)
-                {
-                    context.UpdateRange(    );
-                    await context.SaveChangesAsync();
-                }
+                context.UpdateRange(items);
+                await context.SaveChangesAsync();
                 return new ResponseModel<TEntity, T>(null, null, "Deleted Successfully..", ResponseStatus.Deleted);
             }
             catch (Exception ex)

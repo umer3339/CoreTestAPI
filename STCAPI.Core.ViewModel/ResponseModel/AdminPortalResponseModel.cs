@@ -17,6 +17,7 @@ namespace STCAPI.Core.ViewModel.ResponseModel
 
     public class Datum
     {
+        public int PortalId { get; set; }
         public bool accessLevel { get; set; }
         public string name { get; set; }
     }

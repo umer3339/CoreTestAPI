@@ -7,7 +7,6 @@ using STAAPI.Infrastructure.Repository.GenericRepository;
 using STCAPI.Core.Entities.RequestDetail;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace STCAPI.Controllers.RequestDetails
