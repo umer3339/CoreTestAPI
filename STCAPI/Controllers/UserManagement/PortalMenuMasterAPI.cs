@@ -83,7 +83,19 @@ namespace STCAPI.Controllers.UserManagement
                 data.IsActive = true;
                 data.IsDeleted = false;
             });
+
+            var deleteModel = await _IPortalAccessRepository.GetAllEntities(x => x.UserName.ToUpper().Trim() ==
+             portalAccesses.First().UserName.Trim().ToUpper());
+
+            deleteModel.TEntities.ToList().ForEach(x => { 
+                x.IsActive = false;
+                x.IsDeleted = true;
+            });
+
+            var deleteResponse= await _IPortalAccessRepository.DeleteEntity(deleteModel.TEntities.ToArray());
+
             var response = await _IPortalAccessRepository.CreateEntity(portalAccesses.ToArray());
+
             return Ok(response.Message);
 
         }

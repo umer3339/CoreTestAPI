@@ -53,21 +53,22 @@ namespace STCAPI.Controllers.UserManagement
             return Ok(response);
         }
 
-        [HttpPut]
+        [HttpPost]
         [Produces("application/json")]
         [Consumes("application/json")]
 
         public async Task<IActionResult> UpdateMainStreamDetails(MainStreamMaster model)
         {
 
-            var deleteModel = new MainStreamMaster()
-            {
-                Id = model.Id,
-                IsActive = false,
-                IsDeleted = true
-            };
+            var deleteModel = await _IMainStreamRepository.GetAllEntities(x=>x.Id== model.Id);
 
-            var deleteResponse = await _IMainStreamRepository.UpdateEntity(deleteModel);
+            deleteModel.TEntities.ToList().ForEach(x => {
+                x.IsActive = false;
+                x.IsDeleted = true;
+            
+            });
+
+            var deleteResponse = await _IMainStreamRepository.UpdateEntity(deleteModel.TEntities.First());
 
             model.Id = 0;
 

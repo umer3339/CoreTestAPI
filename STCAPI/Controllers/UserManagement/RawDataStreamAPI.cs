@@ -35,7 +35,7 @@ namespace STCAPI.Controllers.AdminPortal
             return Ok(response);
         }
 
-        [HttpDelete]
+        [HttpGet]
         [Produces("application/json")]
         [Consumes("application/json")]
         public async Task<IActionResult> DeleteRawDataStream(int id)
@@ -65,6 +65,7 @@ namespace STCAPI.Controllers.AdminPortal
 
             var deleteResponse = await _IRawDataStreamRepository.DeleteEntity(deleteModels.TEntities.ToArray());
 
+            model.Id = 0;
             var createResponse= await _IRawDataStreamRepository.CreateEntity(new List<RawDataStream> { model }.ToArray());
 
             return Ok(createResponse);

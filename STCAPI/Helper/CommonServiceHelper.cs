@@ -23,7 +23,9 @@ namespace STCAPI.Helpers
                                 Name = mainStreamData.Name,
                                 LongName = mainStreamData.LongName,
                                 ShortName = mainStreamData.ShortName,
-                                StageName = stageData.Name
+                                StageName = stageData.Name,
+                                Description = mainStreamData.Description,
+
                             }).ToList();
 
             return response;
@@ -35,6 +37,8 @@ namespace STCAPI.Helpers
                     on mainData.Id equals strData.MainStreamId
                     select new StreamDetailVm
                     {
+                        Id=strData.Id,
+                        MainStreamId = strData.MainStreamId,
                         MainStreamName = mainData.Name,
                         Name = strData.Name,
                         LongName = strData.LongName,

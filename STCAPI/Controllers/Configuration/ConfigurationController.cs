@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using STAAPI.Infrastructure.Repository.GenericRepository;
 using STCAPI.Core.Entities.Configuration;
+using STCAPI.Core.Entities.LogDetail;
 using STCAPI.DataLayer.AdminPortal;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,21 @@ namespace STCAPI.Controllers.Configuration
         private readonly IGenericRepository<StageMaster, int> _IStageMasterRepository;
         private readonly IGenericRepository<StreamMaster, int> _IStreamMasterRepository;
         private readonly IGenericRepository<MainStreamMaster, int> _IMainStreamRepository;
-       
+        private readonly IGenericRepository<LogDetail, int> _ILogeDetailRepository;
+
         private readonly IGenericRepository<ConfigurationMaster, int> _IConfigurationMaster;
 
         public ConfigurationController(IGenericRepository<StageMaster, int> iStageMasterRepository,
             IGenericRepository<StreamMaster, int> iStreamMasterRepository,
             IGenericRepository<MainStreamMaster, int> iMainStreamRepository,
-           
+            IGenericRepository<LogDetail, int> logDetailRepository,
             IGenericRepository<ConfigurationMaster, int> iConfigurationMaster)
         {
             _IStageMasterRepository = iStageMasterRepository;
             _IStreamMasterRepository = iStreamMasterRepository;
             _IMainStreamRepository = iMainStreamRepository;
             _IConfigurationMaster = iConfigurationMaster;
+            _ILogeDetailRepository = logDetailRepository;
         }
 
         [HttpGet]
@@ -56,7 +59,7 @@ namespace STCAPI.Controllers.Configuration
             return Ok(response);
         }
 
-        
+
         [HttpPost]
         [Produces("application/json")]
         [Consumes("application/json")]
@@ -70,7 +73,7 @@ namespace STCAPI.Controllers.Configuration
         [Produces("application/json")]
         public async Task<IActionResult> GetConfigurationDetails(string configurationTypeId)
         {
-            var response = await _IConfigurationMaster.GetAllEntities(x => x.ConfigurationType.Trim().ToUpper() 
+            var response = await _IConfigurationMaster.GetAllEntities(x => x.ConfigurationType.Trim().ToUpper()
             == configurationTypeId.Trim().ToUpper());
 
             return Ok(response);
@@ -105,12 +108,13 @@ namespace STCAPI.Controllers.Configuration
         {
             var deleteModels = await _IConfigurationMaster.GetAllEntities(x => x.Id == id);
 
-            deleteModels.TEntities.ToList().ForEach(x => {
+            deleteModels.TEntities.ToList().ForEach(x =>
+            {
                 x.IsActive = false;
-                x.IsDeleted= true;
+                x.IsDeleted = true;
             });
 
-            var deleteResponse=await _IConfigurationMaster.DeleteEntity(deleteModels.TEntities.ToArray());
+            var deleteResponse = await _IConfigurationMaster.DeleteEntity(deleteModels.TEntities.ToArray());
 
             return Ok(deleteResponse);
         }

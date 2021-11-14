@@ -2,11 +2,9 @@
 using STAAPI.Infrastructure.Repository.GenericRepository;
 using STCAPI.DataLayer.AdminPortal;
 using STCAPI.Helpers;
-using STCAPI.ReqRespVm;
 using STCAPI.ReqRespVm.AdminPortal;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
 
 namespace STCAPI.Controllers.AdminPortal
@@ -47,7 +45,6 @@ namespace STCAPI.Controllers.AdminPortal
             List<StreamDetailVm> responseData = CommonServiceHelper.GetStreamDetails(mainStreamData, streamData);
 
             return Ok(responseData);
-
 
         }
 

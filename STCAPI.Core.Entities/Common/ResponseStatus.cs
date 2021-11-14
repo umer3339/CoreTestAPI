@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace STCAPI.Core.Entities.Common
+﻿namespace STCAPI.Core.Entities.Common
 {
     public enum ResponseStatus
     {
-        Created=201,
+        Created,
         Deleted,
         Updated,
-        Success=200,
+        Success,
         AlreadyExists,
         Error=500
     }
