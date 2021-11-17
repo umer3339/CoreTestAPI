@@ -69,8 +69,8 @@ namespace STCAPI.Controllers.UserManagement
 
             });
 
-            var response = GetFormattedResponse(portalAccessModels, userName);
-            return Ok(response);
+            //var response = GetFormattedResponse(portalAccessModels);
+            return Ok(portalAccessModels);
         }
 
         [HttpPost]
@@ -122,19 +122,19 @@ namespace STCAPI.Controllers.UserManagement
                 var stageModel = new Stage();
                 stageModel.stageName = stageData.Key;
 
-                foreach (var mainStreamData in stageData.Where(x => x.Stage == stageData.Key).GroupBy(x => x.MainStream))
+                foreach (var mainStreamData in stageData.GroupBy(x => x.MainStream))
                 {
                     var mainStreamModel = new MainStream();
                     mainStreamModel.streamName = mainStreamData.Key;
 
 
-                    foreach (var subStreamData in mainStreamData.Where(x => x.MainStream == mainStreamData.Key).GroupBy(x => x.Stream))
+                    foreach (var subStreamData in mainStreamData.GroupBy(x => x.Stream))
                     {
                         var subStreamModel = new SubStream();
                         subStreamModel.subStreamName = subStreamData.Key;
                         subStreamList.Add(subStreamModel);
                         var objectDatas = new List<ObjectData>();
-                        foreach (var objectData in subStreamData.Where(x => x.Stream == subStreamData.Key).GroupBy(x => x.ObjectName))
+                        foreach (var objectData in subStreamData.GroupBy(x => x.ObjectName))
                         {
                             var objectData1 = new ObjectData();
                             objectData1.name = objectData.Key;
