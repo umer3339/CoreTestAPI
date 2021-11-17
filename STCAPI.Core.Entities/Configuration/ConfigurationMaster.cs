@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace STCAPI.Core.Entities.Configuration
 {
-    [Table("ConfigurationMaster")]
+    [Table("configurationmastertype")]
     public class ConfigurationMaster: BaseModel<int>
     {
         public string MasterType { get; set; }

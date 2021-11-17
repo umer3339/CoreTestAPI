@@ -11,6 +11,8 @@ namespace STCAPI.Controllers.Configuration
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+
+    ///This is configuration Project
     public class ConfigurationController : ControllerBase
     {
         private readonly IGenericRepository<StageMaster, int> _IStageMasterRepository;
