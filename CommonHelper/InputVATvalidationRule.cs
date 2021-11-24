@@ -12,10 +12,9 @@ namespace CommonHelper
         public static IDictionary<int, (string, string)> ValidateInputVatData(List<InputVATFileVm> models)
         {
             IDictionary<int, (string,string)> errorResult = new Dictionary<int, (string, string)>();
-            int count = 0;
+            int count = 3;
             foreach (var data in models)
             {
-                count++;
                 if (string.IsNullOrEmpty(data.InvoiceType))
                     errorResult.Add(count++,("InvoiceType", $"Invoice Type is mandatory"));
 
@@ -104,6 +103,9 @@ namespace CommonHelper
 
                 if (string.IsNullOrEmpty(data.ProductType))
                     errorResult.Add(count++, ("ProductType", $"ProductType is mandatory"));
+
+                if (string.IsNullOrEmpty(data.TaxRate))
+                    errorResult.Add(count++, ("TaxRate", $"TaxRate is mandatory"));
 
                 if (string.IsNullOrEmpty(data.TaxCode))
                     errorResult.Add(count++, ("TaxCode", $"TaxCode is mandatory"));

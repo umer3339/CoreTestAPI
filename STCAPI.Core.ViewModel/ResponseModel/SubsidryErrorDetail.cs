@@ -10,5 +10,6 @@ namespace STCAPI.Core.ViewModel.ResponseModel
     {
         public string PropertyName { get; set; }
         public string ErrorDetail { get; set; }
+        public int rowNumber { get; set; }
     }
 }
