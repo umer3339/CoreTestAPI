@@ -468,8 +468,9 @@ namespace STCAPI.Controllers.ExcelReader
         private async Task<List<InputVATDataFile>> ConvertInputModelToDBModel(List<InputVATFileVm> models)
         {
             List<InputVATDataFile> dbModels = new List<InputVATDataFile>();
-            models.ForEach(item =>
+            foreach (var item in models)
             {
+ 
                 var dbModel = new InputVATDataFile();
                 dbModel.InvoiceType = item.InvoiceType;
                 dbModel.InvoiceSource = item.InvoiceSource;
@@ -525,7 +526,7 @@ namespace STCAPI.Controllers.ExcelReader
                 dbModel.RecoverableTaxGLAccountNumber = item.RecoverableTaxGLAccountNumber;
 
                 dbModels.Add(dbModel);
-            });
+            };
 
             return await Task.Run(() => dbModels);
 
@@ -578,73 +579,82 @@ namespace STCAPI.Controllers.ExcelReader
         private async Task<List<STCVATOutputModel>> DTOOutModelToOutputDataModel(List<OutPutVATModel> models)
         {
             var dtoModels = new List<STCVATOutputModel>();
-            models.ForEach(item =>
+            try
             {
+                foreach (var item in models)
+                {
+ 
 
-                var dtoModel = new STCVATOutputModel();
-                dtoModel.InvoiceNumber = item.InvoiceNumber.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceDocSequence = item.InvoiceDocSequence.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceSource = item.InvoiceSource.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceType = item.InvoiceType.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceDate = item.InvoiceDate.GetDefaultIfStringNull<DateTime>();
-                dtoModel.GLDate = item.GLDate.GetDefaultIfStringNull<DateTime>();
-                dtoModel.InvoiceAmount = item.InvoiceAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.InvoiceCurrency = item.InvoiceCurrency.GetDefaultIfStringNull<string>();
-                dtoModel.CurrencyExchangeRate = item.CurrencyExchangeRate.GetDefaultIfStringNull<decimal>();
-                dtoModel.SARInvoiceAmount = item.SARInvoiceAmount.GetDefaultIfStringNull<decimal>();
+                    var dtoModel = new STCVATOutputModel();
+                    dtoModel.InvoiceNumber = item.InvoiceNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceDocSequence = item.InvoiceDocSequence.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceSource = item.InvoiceSource.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceType = item.InvoiceType.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceDate = item.InvoiceDate.GetDefaultIfStringNull<DateTime>();
+                    dtoModel.GLDate = item.GLDate.GetDefaultIfStringNull<DateTime>();
+                    dtoModel.InvoiceAmount = item.InvoiceAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.InvoiceCurrency = item.InvoiceCurrency.GetDefaultIfStringNull<string>();
+                    dtoModel.CurrencyExchangeRate = item.CurrencyExchangeRate.GetDefaultIfStringNull<decimal>();
+                    dtoModel.SARInvoiceAmount = item.SARInvoiceAmount.GetDefaultIfStringNull<decimal>();
 
-                dtoModel.CustomerNumber = item.CustomerNumber.GetDefaultIfStringNull<string>();
-                dtoModel.CustomerName = item.CustomerName.GetDefaultIfStringNull<string>();
-                dtoModel.BillToAddress = item.BillToAdress.GetDefaultIfStringNull<string>();
-                dtoModel.CustomerCountryName = item.CustomerCountryName.GetDefaultIfStringNull<string>();
-                dtoModel.CustomerVATRegistrationNumber = item.CustomerVATRegistrationNumber.GetDefaultIfStringNull<string>();
-                dtoModel.CustomerCommercialRegistrationNumber = item.CustomerCommercialRegistrationNumber.GetDefaultIfStringNull<string>();
-                dtoModel.SellerName = item.SellerName.GetDefaultIfStringNull<string>();
-                dtoModel.SellerVATRegistrationNumber = item.SellerVATRegistrationNumber.GetDefaultIfStringNull<string>();
-                dtoModel.SellerAddress = item.SellerAddress.GetDefaultIfStringNull<string>();
-                dtoModel.GroupVATRegistrationNumber = item.GroupVARRegistrationNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.CustomerNumber = item.CustomerNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.CustomerName = item.CustomerName.GetDefaultIfStringNull<string>();
+                    dtoModel.BillToAddress = item.BillToAdress.GetDefaultIfStringNull<string>();
+                    dtoModel.CustomerCountryName = item.CustomerCountryName.GetDefaultIfStringNull<string>();
+                    dtoModel.CustomerVATRegistrationNumber = item.CustomerVATRegistrationNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.CustomerCommercialRegistrationNumber = item.CustomerCommercialRegistrationNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.SellerName = item.SellerName.GetDefaultIfStringNull<string>();
+                    dtoModel.SellerVATRegistrationNumber = item.SellerVATRegistrationNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.SellerAddress = item.SellerAddress.GetDefaultIfStringNull<string>();
+                    dtoModel.GroupVATRegistrationNumber = item.GroupVARRegistrationNumber.GetDefaultIfStringNull<string>();
 
-                dtoModel.SellerCommercialNumber = item.SellerCommercialNumber.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceLineNumber = item.InvoiceLineNumber.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceLineDescription = item.InvoiceLineDescription.GetDefaultIfStringNull<string>();
-                dtoModel.IssueDate = item.IssueDate.GetDefaultIfStringNull<string>();
-                dtoModel.Quantity = item.Quantity.GetDefaultIfStringNull<decimal>();
-                dtoModel.UnitPrice = item.UnitPrice.GetDefaultIfStringNull<decimal>();
-                dtoModel.DiscountAmount = item.DiscountAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.DiscountPercentage = item.DiscountPercentage.GetDefaultIfStringNull<decimal>();
-                dtoModel.PaymentMethod = item.PaymentMethod.GetDefaultIfStringNull<string>();
-                dtoModel.PaymentTerm = item.PaymentTerm.GetDefaultIfStringNull<string>();
-
-
-                dtoModel.InvoiceLineAmount = item.InvoiceLineAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.SARInvoiceLineAmount = item.SARInvoiceLineAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.TaxRateName = item.TaxRateName.GetDefaultIfStringNull<string>();
-                dtoModel.TaxableAmount = item.TaxableAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.SARTaxAmount = item.SARTaxAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.TaxAmount = item.TaxAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.SARTaxAmount = item.SARTaxAmount.GetDefaultIfStringNull<decimal>();
-                dtoModel.TaxClassificationCode = item.TaxClassificationCode.GetDefaultIfStringNull<string>();
-                dtoModel.TaxRate = item.TaxRate.GetDefaultIfStringNull<decimal>();
-                dtoModel.TaxAccount = item.TaxAccount.GetDefaultIfStringNull<string>();
+                    dtoModel.SellerCommercialNumber = item.SellerCommercialNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceLineNumber = item.InvoiceLineNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceLineDescription = item.InvoiceLineDescription.GetDefaultIfStringNull<string>();
+                    dtoModel.IssueDate = item.IssueDate.GetDefaultIfStringNull<string>();
+                    dtoModel.Quantity = item.Quantity.GetDefaultIfStringNull<decimal>();
+                    dtoModel.UnitPrice = item.UnitPrice.GetDefaultIfStringNull<decimal>();
+                    dtoModel.DiscountAmount = item.DiscountAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.DiscountPercentage = item.DiscountPercentage.GetDefaultIfStringNull<decimal>();
+                    dtoModel.PaymentMethod = item.PaymentMethod.GetDefaultIfStringNull<string>();
+                    dtoModel.PaymentTerm = item.PaymentTerm.GetDefaultIfStringNull<string>();
 
 
-                dtoModel.ContractNumber = item.ContractNumber.GetDefaultIfStringNull<string>();
-                dtoModel.ContractDescription = item.ContractDescription.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceLineAmount = item.InvoiceLineAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.SARInvoiceLineAmount = item.SARInvoiceLineAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.TaxRateName = item.TaxRateName.GetDefaultIfStringNull<string>();
+                    dtoModel.TaxableAmount = item.TaxableAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.SARTaxAmount = item.SARTaxAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.TaxAmount = item.TaxAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.SARTaxAmount = item.SARTaxAmount.GetDefaultIfStringNull<decimal>();
+                    dtoModel.TaxClassificationCode = item.TaxClassificationCode.GetDefaultIfStringNull<string>();
+                    dtoModel.TaxRate = item.TaxRate.GetDefaultIfStringNull<decimal>();
+                    dtoModel.TaxAccount = item.TaxAccount.GetDefaultIfStringNull<string>();
 
-                dtoModel.ContractStartDate = item.ContractStartDate.GetDefaultIfStringNull<DateTime>();
-                dtoModel.ContractEndDate = item.ContractEndDate.GetDefaultIfStringNull<DateTime>();
-                dtoModel.OriginalInvoice = item.OriginalInvoice.GetDefaultIfStringNull<string>();
-                dtoModel.PoNumber = item.PONumber.GetDefaultIfStringNull<string>();
-                dtoModel.UniversalUniqueInvoiceIndentifier = item.UniversalUniqueInvoiceIdentifier.GetDefaultIfStringNull<string>();
-                dtoModel.QRCode = item.QRCode.GetDefaultIfStringNull<string>();
-                dtoModel.PreviousInvoiceNoteHash = item.PreviousInvoiceNoteHash.GetDefaultIfStringNull<string>();
-                dtoModel.InvoiceTamperResistantCounterValue = item.InvoiceTamperResistantCounterValue.GetDefaultIfStringNull<string>();
+
+                    dtoModel.ContractNumber = item.ContractNumber.GetDefaultIfStringNull<string>();
+                    dtoModel.ContractDescription = item.ContractDescription.GetDefaultIfStringNull<string>();
+
+                    dtoModel.ContractStartDate = item.ContractStartDate.GetDefaultIfStringNull<DateTime>();
+                    dtoModel.ContractEndDate = item.ContractEndDate.GetDefaultIfStringNull<DateTime>();
+                    dtoModel.OriginalInvoice = item.OriginalInvoice.GetDefaultIfStringNull<string>();
+                    dtoModel.PoNumber = item.PONumber.GetDefaultIfStringNull<string>();
+                    dtoModel.UniversalUniqueInvoiceIndentifier = item.UniversalUniqueInvoiceIdentifier.GetDefaultIfStringNull<string>();
+                    dtoModel.QRCode = item.QRCode.GetDefaultIfStringNull<string>();
+                    dtoModel.PreviousInvoiceNoteHash = item.PreviousInvoiceNoteHash.GetDefaultIfStringNull<string>();
+                    dtoModel.InvoiceTamperResistantCounterValue = item.InvoiceTamperResistantCounterValue.GetDefaultIfStringNull<string>();
 
 
-                dtoModels.Add(dtoModel);
-            });
+                    dtoModels.Add(dtoModel);
 
-            return await Task.Run(() => dtoModels);
+                };
+                return await Task.Run(() => dtoModels);
+            }
+            catch(Exception ex)
+            {
+                return await Task.Run(() => dtoModels);
+            }
+            //return await Task.Run(() => dtoModels);
         }
 
         private async Task<bool> CreateSTCOutputModel(List<STCVATOutputModel> models, string userName)
