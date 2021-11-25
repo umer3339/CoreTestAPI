@@ -55,5 +55,6 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<StreamMaster> StreamMasters { get; set; }
         public virtual DbSet<ConfigurationMaster> ConfigurationMasters { get; set; }
         public virtual DbSet<MainStreamMaster> MainStreamMasters { get; set; }
+        public virtual DbSet<QlikDataAccess> QlikDataAccesses { get; set; }
     }
 }

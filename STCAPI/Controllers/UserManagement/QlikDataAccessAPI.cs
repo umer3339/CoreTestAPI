@@ -24,6 +24,7 @@ namespace STCAPI.Controllers.AdminPortal
         [Consumes("application/json")]
         public async Task<IActionResult> CreateDataAccess(QlikDataAccess model)
         {
+
             var filteredModel = await _IQlickDataAccessRepository.GetAllEntities(
 
                          x => x.StreamName.Trim().ToUpper() == model.StreamName.Trim().ToUpper()

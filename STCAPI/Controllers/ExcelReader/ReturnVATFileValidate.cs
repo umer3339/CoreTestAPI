@@ -42,7 +42,7 @@ namespace STCAPI.Controllers.ExcelReader
                 var model = new SubsidryErrorDetail();
                 model.PropertyName = data.Value.Item1;
                 model.ErrorDetail = data.Value.Item2;
-
+                model.rowNumber = data.Key;
                 models.Add(model);
             }
             return models;
@@ -79,13 +79,14 @@ namespace STCAPI.Controllers.ExcelReader
                         for (int i = 1; i < inputVatInvoiceDetail.Rows.Count; i++)
                         {
                             var model = new VATRetunDetailModel();
-                            // model.Account = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column0"]);
-                            // model.Description = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column1"]);
-                            // model.BeginingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column3"]);
-                            // model.Debit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
-                            // model.Credit = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
-                            // model.Activity = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
-                            // model.EndingBalance = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
+                            model.VATType = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column0"]);
+                            model.VATTypeId = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column1"]);
+                            model.VATTypeName = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column3"]);
+                            model.SARAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
+                            model.SARAdjustment = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
+                            model.SARVATAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
+                            model.VATReturnDetail = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
+                            model.UploadInvoiceDetailId = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
                             models.Add(model);
                         }
                     }

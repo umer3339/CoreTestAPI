@@ -81,7 +81,7 @@ namespace STCAPI.Controllers.ExcelReader
                         DataTable inputVatInvoiceDetail = dsexcelRecords.Tables[0];
                         //var newDT = DataTableHelper.MakeFirstRowAsColumnName(inputVatInvoiceDetail);
                         //var detailModels = ConvertDataTableToList.ConvertDataTable<OutPutVATModel>(newDT);
-
+                        int row = 2;
                         for (int i = 2; i < inputVatInvoiceDetail.Rows.Count; i++)
                         {
                             var model = new OutPutVATModel();
@@ -137,6 +137,7 @@ namespace STCAPI.Controllers.ExcelReader
                             model.QRCode = Convert.ToString(inputVatInvoiceDetail.Rows[i][47]);
                             model.PreviousInvoiceNoteHash = Convert.ToString(inputVatInvoiceDetail.Rows[i][48]);
                             model.InvoiceTamperResistantCounterValue = Convert.ToString(inputVatInvoiceDetail.Rows[i][49]);
+                            row++;
                             models.Add(model);
                         }
                     }
@@ -157,6 +158,7 @@ namespace STCAPI.Controllers.ExcelReader
             foreach (var data in error)
             {
                 var model = new SubsidryErrorDetail();
+                model.rowNumber = data.Key;
                 model.PropertyName = data.Value.Item1;
                 model.ErrorDetail = data.Value.Item2;
 
