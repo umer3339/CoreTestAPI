@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace STCAPI.Controllers.ExcelReader
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class TrialVATFileValidate : ControllerBase
     {
@@ -30,9 +30,16 @@ namespace STCAPI.Controllers.ExcelReader
         [HttpPost]
         public async Task<IActionResult> TrialVATValidate([FromForm] InvoiceDetail model)
         {
-            var balanceDataModel = await Task.Run(() => VATTrialBalance(model.InvoiceExcelFile));
-            var errorResult = VATTrialBalanceValidationRule.ValidateVATTrialBalance(balanceDataModel);
-            return Ok(GetErrorDetails(errorResult)); ;
+            try
+            {
+                var balanceDataModel = await Task.Run(() => VATTrialBalance(model.InvoiceExcelFile));
+                var errorResult = VATTrialBalanceValidationRule.ValidateVATTrialBalance(balanceDataModel);
+                return Ok(GetErrorDetails(errorResult)); ;
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("The Uploaded excel file do not support !!!");
+            }
         }
 
         private List<SubsidryErrorDetail> GetErrorDetails(IDictionary<int, (string, string)> error)
@@ -43,7 +50,7 @@ namespace STCAPI.Controllers.ExcelReader
                 var model = new SubsidryErrorDetail();
                 model.PropertyName = data.Value.Item1;
                 model.ErrorDetail = data.Value.Item2;
-
+                model.rowNumber = data.Key;
                 models.Add(model);
             }
             return models;

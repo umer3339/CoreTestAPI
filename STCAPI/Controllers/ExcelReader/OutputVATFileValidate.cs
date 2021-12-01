@@ -36,7 +36,8 @@ namespace STCAPI.Controllers.ExcelReader
 
                 var invoiceFiles = new List<IFormFile>() { model.InvoiceExcelFile };
 
-                var uploadFileDetails = await new BlobHelper().UploadDocument(invoiceFiles, _IHostingEnviroment);
+                var uploadFileDetails = await new BlobHelper().UploadDocument(invoiceFiles,
+                    _IHostingEnviroment);
 
                 var OutputVATModel = await Task.Run(() => OutputVATExcelFle(model.InvoiceExcelFile));
                 errorResult = OutputVATValidationRule.ValidateOutputVatData(OutputVATModel);

@@ -76,7 +76,7 @@ namespace STCVAT_Demo.UI.Controllers
                     break;
                 case "btnVATTrailBalanceDataFile":
                     var OutputVATTrailModel = await Task.Run(() => VATTrialBalance(VATTrailBalanceDataFile));
-                    errorResult = VATTrialBalanceValidationRule.ValidateVATTrialBalance(OutputVATTrailModel);
+                    IDictionary<int, (int,string, string)> trialBalanceError = VATTrialBalanceValidationRule.ValidateVATTrialBalance(OutputVATTrailModel);
                     break;
 
             }

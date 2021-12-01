@@ -20,7 +20,7 @@ namespace STCAPI.Controllers.ExcelReader
     {
         private readonly IHostingEnvironment _IHostingEnviroment;
 
-        public ReturnVATFileValidate(IHostingEnvironment hostingEnvironment) 
+        public ReturnVATFileValidate(IHostingEnvironment hostingEnvironment)
         {
             _IHostingEnviroment = hostingEnvironment;
         }
@@ -30,8 +30,8 @@ namespace STCAPI.Controllers.ExcelReader
         {
             var VATReturnModel = await Task.Run(() => VATReturnExcelData(model.InvoiceExcelFile));
             var errorResult = VATReturnValidationRule.ValidateVATReturn(VATReturnModel);
-            
-            return Ok(GetErrorDetails(errorResult));
+
+            return Ok();
         }
 
         private List<SubsidryErrorDetail> GetErrorDetails(IDictionary<int, (string, string)> error)
@@ -57,6 +57,7 @@ namespace STCAPI.Controllers.ExcelReader
             string message = string.Empty;
             Stream stream = inputFile.OpenReadStream();
             List<VATRetunDetailModel> models = new List<VATRetunDetailModel>();
+            List<VATRetunDetailModel> finalResult = new List<VATRetunDetailModel>();
 
             try
             {
@@ -79,14 +80,14 @@ namespace STCAPI.Controllers.ExcelReader
                         for (int i = 1; i < inputVatInvoiceDetail.Rows.Count; i++)
                         {
                             var model = new VATRetunDetailModel();
-                            model.VATType = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column0"]);
-                            model.VATTypeId = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column1"]);
-                            model.VATTypeName = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column3"]);
-                            model.SARAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
-                            model.SARAdjustment = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column5"]);
-                            model.SARVATAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
+                            model.VATType = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column2"]);
+                            model.VATTypeId = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column4"]);
+                            model.VATTypeName = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column6"]);
+                            model.SARAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column8"]);
+                            model.SARAdjustment = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column10"]);
+                            model.SARVATAmount = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column12"]);
                             model.VATReturnDetail = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
-                            model.UploadInvoiceDetailId = Convert.ToString(inputVatInvoiceDetail.Rows[i]["Column7"]);
+
                             models.Add(model);
                         }
                     }
@@ -97,8 +98,14 @@ namespace STCAPI.Controllers.ExcelReader
                 message = ex.Message;
                 return null;
             }
-
-            return models;
+            models.ForEach(data =>
+            {
+                if (!string.IsNullOrEmpty(data.VATTypeId))
+                {
+                    finalResult.Add(data);
+                }
+            });
+            return finalResult;
         }
     }
 }

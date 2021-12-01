@@ -6,6 +6,7 @@ using STCAPI.Core.Entities.Reconcilation;
 using STCAPI.Core.Entities.Report;
 using STCAPI.Core.Entities.RequestDetail;
 using STCAPI.Core.Entities.STCVAT;
+using STCAPI.Core.Entities.Subsidry;
 using STCAPI.Core.Entities.UserManagement;
 using STCAPI.Core.Entities.VATDetailUpload;
 using STCAPI.DataLayer.AdminPortal;
@@ -56,5 +57,8 @@ namespace STCAPI.Core.Entities.Context
         public virtual DbSet<ConfigurationMaster> ConfigurationMasters { get; set; }
         public virtual DbSet<MainStreamMaster> MainStreamMasters { get; set; }
         public virtual DbSet<QlikDataAccess> QlikDataAccesses { get; set; }
+
+        public virtual DbSet<SubsidryModel> SubsidryModels { get; set; }
+        public virtual DbSet<SubsidryUserMapping> SubsidryUserMappings { get; set; }
     }
 }

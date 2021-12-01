@@ -67,7 +67,6 @@ namespace STCAPI.Controllers.ExcelReader
                 {
                     case VATExcelType.InputDataFile:
                         var inputVATModel = await Task.Run(() => InputVATExcelData(model.InvoiceExcelFile));
-                        errorResult = InputVATvalidationRule.ValidateInputVatData(inputVATModel);
                         var dbModels = await ConvertInputModelToDBModel(inputVATModel);
                         dbModels.ForEach(data =>
                         {
@@ -718,43 +717,43 @@ namespace STCAPI.Controllers.ExcelReader
             int count = 0;
             string vatType = "VAT on Sales";
             string vatrTypeDetail = string.Empty;
-            try
-            {
-                foreach (var data in models)
-                {
-                    count++;
-                    if (count > 5)
-                    {
-                        if (data.Column2.Contains("Purchases"))
-                        {
-                            vatType = "VAT on Purchases";
-                        }
-                        var dbModel = new VATReturnModel();
-                        dbModel.VATType = vatType;
-                        dbModel.VATTypeId = data.Column4.GetDefaultIfStringNull<decimal>();
-                        dbModel.VATTypeName = data.Column6;
-                        dbModel.SARAmount = data.Column8.GetDefaultIfStringNull<decimal>();
-                        dbModel.SARAdjustment = data.Column10.GetDefaultIfStringNull<decimal>();
-                        dbModel.SARVATAmount = data.Column12.GetDefaultIfStringNull<decimal>();
-                        dbModels.Add(dbModel);
-                    }
-                    if (count == 2)
-                    {
-                        vatrTypeDetail = data.Column8;
-                    }
-                }
+            //try
+            //{
+            //    foreach (var data in models)
+            //    {
+            //        count++;
+            //        if (count > 5)
+            //        {
+            //            if (data.Column2.Contains("Purchases"))
+            //            {
+            //                vatType = "VAT on Purchases";
+            //            }
+            //            var dbModel = new VATReturnModel();
+            //            dbModel.VATType = vatType;
+            //            dbModel.VATTypeId = data.Column4..GetDefaultIfStringNull<decimal>();
+            //            dbModel.VATTypeName = data.Column6;
+            //            dbModel.SARAmount = data.Column8.GetDefaultIfStringNull<decimal>();
+            //            dbModel.SARAdjustment = data.Column10.GetDefaultIfStringNull<decimal>();
+            //            dbModel.SARVATAmount = data.Column12.GetDefaultIfStringNull<decimal>();
+            //            dbModels.Add(dbModel);
+            //        }
+            //        if (count == 2)
+            //        {
+            //            vatrTypeDetail = data.Column8;
+            //        }
+            //    }
 
-                dbModels.ForEach(data =>
-                {
-                    data.VATReturnDetail = vatrTypeDetail;
-                    data.CreatedDate = DateTime.Now;
-                });
-            }
-            catch (Exception ex)
-            {
-                string message = ex.Message;
-                return (message, null);
-            }
+            //    dbModels.ForEach(data =>
+            //    {
+            //        data.VATReturnDetail = vatrTypeDetail;
+            //        data.CreatedDate = DateTime.Now;
+            //    });
+            //}
+            //catch (Exception ex)
+            //{
+            //    string message = ex.Message;
+            //    return (message, null);
+            //}
             return await Task.Run(() => ("", dbModels));
         }
 
