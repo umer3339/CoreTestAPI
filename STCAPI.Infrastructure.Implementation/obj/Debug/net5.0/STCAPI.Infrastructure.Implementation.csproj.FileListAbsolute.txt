@@ -1,0 +1,17 @@
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STCAPI.Infrastructure.Implementation.deps.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STCAPI.Infrastructure.Implementation.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\ref\STCAPI.Infrastructure.Implementation.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STCAPI.Infrastructure.Implementation.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STAAPI.Infrastructure.Repository.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STAAPI.Infrastructure.Repository.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\bin\Debug\net5.0\STCAPI.Core.Entities.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.csproj.AssemblyReference.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.AssemblyInfoInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.AssemblyInfo.cs
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.csproj.CopyComplete
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\ref\STCAPI.Infrastructure.Implementation.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Infrastructure.Implementation\obj\Debug\net5.0\STCAPI.Infrastructure.Implementation.pdb

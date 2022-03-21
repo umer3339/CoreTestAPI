@@ -1,0 +1,17 @@
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\STCAPI.Core.ViewModel.deps.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\STCAPI.Core.ViewModel.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\ref\STCAPI.Core.ViewModel.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\STCAPI.Core.ViewModel.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\MailHelper.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\MailHelper.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\bin\Debug\net5.0\STCAPI.Core.Entities.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.csproj.AssemblyReference.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.AssemblyInfoInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.AssemblyInfo.cs
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.csproj.CopyComplete
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\ref\STCAPI.Core.ViewModel.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.ViewModel\obj\Debug\net5.0\STCAPI.Core.ViewModel.pdb

@@ -1,0 +1,15 @@
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\bin\Debug\net5.0\STAAPI.Infrastructure.Repository.deps.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\bin\Debug\net5.0\STAAPI.Infrastructure.Repository.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\bin\Debug\net5.0\ref\STAAPI.Infrastructure.Repository.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\bin\Debug\net5.0\STAAPI.Infrastructure.Repository.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\bin\Debug\net5.0\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\bin\Debug\net5.0\STCAPI.Core.Entities.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.csproj.AssemblyReference.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.AssemblyInfoInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.AssemblyInfo.cs
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.csproj.CoreCompileInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.csproj.CopyComplete
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\ref\STAAPI.Infrastructure.Repository.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STAAPI.Infrastructure.Repository\obj\Debug\net5.0\STAAPI.Infrastructure.Repository.pdb

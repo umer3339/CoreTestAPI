@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\evolligence\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\evolligence\\.nuget\\packages"
+    ]
+  }
+}

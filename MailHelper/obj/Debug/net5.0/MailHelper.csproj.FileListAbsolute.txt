@@ -1,0 +1,15 @@
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\bin\Debug\net5.0\MailHelper.deps.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\bin\Debug\net5.0\MailHelper.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\bin\Debug\net5.0\ref\MailHelper.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\bin\Debug\net5.0\MailHelper.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\bin\Debug\net5.0\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\bin\Debug\net5.0\STCAPI.Core.Entities.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.csproj.AssemblyReference.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.AssemblyInfoInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.AssemblyInfo.cs
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.csproj.CoreCompileInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.csproj.CopyComplete
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\ref\MailHelper.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\MailHelper\obj\Debug\net5.0\MailHelper.pdb

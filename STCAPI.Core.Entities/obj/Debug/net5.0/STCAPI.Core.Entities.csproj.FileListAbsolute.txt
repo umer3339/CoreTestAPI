@@ -1,0 +1,15 @@
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\bin\Debug\net5.0\STCAPI.Core.Entities.deps.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\bin\Debug\net5.0\STCAPI.Core.Entities.runtimeconfig.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\bin\Debug\net5.0\STCAPI.Core.Entities.runtimeconfig.dev.json
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\bin\Debug\net5.0\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\bin\Debug\net5.0\ref\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\bin\Debug\net5.0\STCAPI.Core.Entities.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.AssemblyInfoInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.AssemblyInfo.cs
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\ref\STCAPI.Core.Entities.dll
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.pdb
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.genruntimeconfig.cache
+C:\Users\evolligence\Desktop\Project Directory\STAAPI\STCAPI.Core.Entities\obj\Debug\net5.0\STCAPI.Core.Entities.csproj.AssemblyReference.cache

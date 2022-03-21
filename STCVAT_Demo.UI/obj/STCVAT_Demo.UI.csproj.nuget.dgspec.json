@@ -1,0 +1,635 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCVAT_Demo.UI\\STCVAT_Demo.UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj",
+        "projectName": "CommonHelper",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj",
+        "projectName": "MailHelper",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj",
+        "projectName": "STAAPI.Infrastructure.Repository",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj",
+        "projectName": "STCAPI.Core.Entities",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj",
+        "projectName": "STCAPI.Core.ViewModel",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj",
+        "projectName": "STCAPI.Infrastructure.Implementation",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI\\STCAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI\\STCAPI.csproj",
+        "projectName": "STCAPI",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI\\STCAPI.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[47.0.1268, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Serilog.Sinks.MariaDB": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCVAT_Demo.UI\\STCVAT_Demo.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCVAT_Demo.UI\\STCVAT_Demo.UI.csproj",
+        "projectName": "STCVAT_Demo.UI",
+        "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCVAT_Demo.UI\\STCVAT_Demo.UI.csproj",
+        "packagesPath": "C:\\Users\\evolligence\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCVAT_Demo.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\evolligence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\CommonHelper\\CommonHelper.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\MailHelper\\MailHelper.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STAAPI.Infrastructure.Repository\\STAAPI.Infrastructure.Repository.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.Entities\\STCAPI.Core.Entities.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Core.ViewModel\\STCAPI.Core.ViewModel.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI.Infrastructure.Implementation\\STCAPI.Infrastructure.Implementation.csproj"
+              },
+              "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI\\STCAPI.csproj": {
+                "projectPath": "C:\\Users\\evolligence\\Desktop\\Project Directory\\STAAPI\\STCAPI\\STCAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
