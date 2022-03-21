@@ -19,7 +19,7 @@ namespace STCAPI.Controllers.STCVAT
     [Route("api/[controller]/[action]")]
     [ApiController]
     [EnableCors("AllowAnyOrigin")]
-    public class STCVATFormAPI : ControllerBase
+    public class STCVATFormAPI : ControllerBase 
     {
         private readonly IMapper _IMapper;
         private readonly ISTACVATFormRepository _ISTCVATFormRepository;
